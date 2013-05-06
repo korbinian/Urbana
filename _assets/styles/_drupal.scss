@@ -157,5 +157,12 @@ tr.odd {
 }
 
 .fieldset-legend {
-    @extend h2;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.form-file {
+    border: 0 solid;
+    padding: 0;
+    margin-right: $padding-l;
 }
