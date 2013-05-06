@@ -500,6 +500,10 @@ html[xmlns] .slides {display: block;}
 
 
 .node-einrichtungsbeispiel { 
+    .tab-container {
+        float: left;
+        width: 100%;
+    }
     .tabs {
         border-top: 0 solid;
         border-bottom: 1px solid $dark-gray;

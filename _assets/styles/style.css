@@ -832,6 +832,9 @@ html[xmlns] .slides {
   .node-einrichtungsbeispiel .einrichtungsbeispiel-details .field-label {
     display: block !important; }
 
+.node-einrichtungsbeispiel .tab-container {
+  float: left;
+  width: 100%; }
 .node-einrichtungsbeispiel .tabs {
   border-top: 0 solid;
   border-bottom: 1px solid #d4d4d4;
