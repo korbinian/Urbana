@@ -284,7 +284,7 @@ input:invalid, textarea:invalid {
   .site-footer .urbana span {
     color: #eeeeee; }
 
-.site-header .call-to-action .cta-button, .form-submit {
+.site-header .call-to-action .cta-button, .form-submit, #edit-cancel {
   background: #e74136;
   color: #fdedec;
   font-weight: bold !important;
@@ -300,7 +300,7 @@ input:invalid, textarea:invalid {
   -webkit-transition: all 0.2s ease-in-out;
   /* Saf3.2+, Chrome */
   transition: all 0.2s ease-in-out; }
-  .site-header .call-to-action .cta-button:hover, .form-submit:hover {
+  .site-header .call-to-action .cta-button:hover, .form-submit:hover, #edit-cancel:hover {
     background: #d12419;
     -moz-transition: all 0.2s ease-in-out;
     /* FF3.7+ */

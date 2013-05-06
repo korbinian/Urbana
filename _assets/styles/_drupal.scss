@@ -122,3 +122,7 @@ tr.odd {
 .messages {
     margin: $margin !important;
 }
+
+#edit-cancel {
+    @extend %btn-primary;
+}
