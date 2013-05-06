@@ -1188,7 +1188,7 @@ tr.odd {
   max-width: 100%; }
 .page-node-edit .site-content {
   width: 100%;
-  font-size: 12px !important; }
+  sfont-size: 12px !important; }
   .page-node-edit .site-content textarea {
     font-family: Questrial;
     padding: 1em; }
