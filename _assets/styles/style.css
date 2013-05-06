@@ -943,8 +943,13 @@ html[xmlns] .slides {
   float: left;
   width: 20%;
   margin: 0;
-  padding: 0;
-  cursor: move; }
+  padding: 0.25em;
+  cursor: move;
+  height: 8em; }
+  .draggableviews-processed li.views-row img {
+    margin: 0 0 5px 0; }
+  .draggableviews-processed li.views-row .views-field-field-beispielnummer, .draggableviews-processed li.views-row .views-field-nid {
+    display: none; }
 
 body {
   background: #453e3f; }
