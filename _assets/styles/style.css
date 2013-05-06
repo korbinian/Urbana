@@ -1183,7 +1183,7 @@ tr.odd {
   font-style: normal;
   color: #e74136; }
 
-.page-node-edit .site-main .row {
+.page-node-edit .site-main .row, .page-node-edit .site-main .sub {
   width: 100%;
   max-width: 100%; }
 .page-node-edit .site-content {
