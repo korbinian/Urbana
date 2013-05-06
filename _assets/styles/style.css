@@ -1195,6 +1195,9 @@ tr.odd {
 .page-node-edit .sidebar {
   display: none; }
 
+.fieldset-wrapper {
+  padding: 0; }
+
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }
 .lt-ie9 .row {
