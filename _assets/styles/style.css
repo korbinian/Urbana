@@ -945,10 +945,10 @@ html[xmlns] .slides {
   .node-navigation:after {
     clear: both; }
   .node-navigation li {
-    float: left; }
+    float: right; }
   .node-navigation a {
     display: block;
-    background: red; }
+    padding: 0.25em; }
 
 body {
   background: #453e3f; }

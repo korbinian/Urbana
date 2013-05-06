@@ -618,12 +618,11 @@ html[xmlns] .slides {display: block;}
     list-style: none;
     @include clearfix();
     li {
-        float: left;
+        float: right;
     }
     a {
-
         display: block;
-        background: red;
+        padding: $padding-s;
     }
     .prev {
 
