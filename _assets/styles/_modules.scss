@@ -439,11 +439,18 @@ html[xmlns] .slides {display: block;}
 //////////////////////////////////////////////////////////////////////////////*/
 
 .einrichtungsbeispiele {
-    background: red;
+    img {
+        margin: 0 0 5px 0;
+    }
+    .field-name-field-beispielnummer {
+        font-size: $font-size-s;
+    }
+    .node-title {
+        font-size: $font-size-m;
+    }
     td {
-        padding: 0;
-        background: green;
-        width: 20%;
+        padding: 0 $padding-m $padding-m 0;
+        width: 20% !important;
     }
 }
 

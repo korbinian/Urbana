@@ -808,12 +808,15 @@ html[xmlns] .slides {
       .photogrid figure figcaption b {
         display: block; }
 
-.einrichtungsbeispiele {
-  background: red; }
-  .einrichtungsbeispiele td {
-    padding: 0;
-    background: green;
-    width: 20%; }
+.einrichtungsbeispiele img {
+  margin: 0 0 5px 0; }
+.einrichtungsbeispiele .field-name-field-beispielnummer {
+  font-size: 12px; }
+.einrichtungsbeispiele .node-title {
+  font-size: 1em; }
+.einrichtungsbeispiele td {
+  padding: 0 0.5em 0.5em 0;
+  width: 20% !important; }
 
 .node-einrichtungsbeispiel .einrichtungsbeispiel-main {
   float: left;
