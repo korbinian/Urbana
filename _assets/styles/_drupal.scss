@@ -135,6 +135,9 @@ tr.odd {
 }
 
 .page-node-edit {
+    .row {
+        width: 100%;
+    }
     .site-content {
         width: 100%;
         font-size: $font-size-s !important;

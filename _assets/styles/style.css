@@ -1183,6 +1183,8 @@ tr.odd {
   font-style: normal;
   color: #e74136; }
 
+.page-node-edit .row {
+  width: 100%; }
 .page-node-edit .site-content {
   width: 100%;
   font-size: 12px !important; }
