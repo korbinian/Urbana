@@ -29,7 +29,7 @@
 
         <?php if ($view_mode == 'full'): ?>
         
-        <ul class="node-navigation">
+        <ul class="node-navigation top">
             <li class="next"><?php print pn_node($node, 'n'); ?></li>
             <li class="prev"><?php print pn_node($node, 'p'); ?></li>
         </ul> 
@@ -83,7 +83,12 @@
                     <h2>Besonderheiten</h2>
                     <?php print render($content['field_besonderheiten']); ?>
                 </div>
-            </div> 
+        </div> 
+        
+        <ul class="node-navigation bottom">
+            <li class="next"><?php print pn_node($node, 'n'); ?></li>
+            <li class="prev"><?php print pn_node($node, 'p'); ?></li>
+        </ul>
             
         
         <?php endif; ?>

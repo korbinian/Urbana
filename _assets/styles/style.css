@@ -950,6 +950,9 @@ html[xmlns] .slides {
     display: block;
     padding: 0.25em; }
 
+.node-navigation.bottom {
+  bottom: 0; }
+
 body {
   background: #453e3f; }
 
