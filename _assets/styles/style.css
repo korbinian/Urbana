@@ -945,7 +945,7 @@ html[xmlns] .slides {
   margin: 0;
   padding: 0.25em;
   cursor: move;
-  height: 8em; }
+  height: 12em; }
   .draggableviews-processed li.views-row img {
     margin: 0 0 5px 0; }
   .draggableviews-processed li.views-row .views-field-field-beispielnummer, .draggableviews-processed li.views-row .views-field-nid {
