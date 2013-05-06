@@ -288,7 +288,7 @@ input:invalid, textarea:invalid {
 .site-header .call-to-action .cta-button {
   background: #e74136;
   color: #fdedec;
-  font-weight: bold !important;
+  sfont-weight: bold !important;
   border-radius: 2px;
   border-color: #e74136;
   padding: 0.25em 0.5em;
@@ -314,7 +314,7 @@ input:invalid, textarea:invalid {
 .form-actions input[type="submit"], .action-links li a, .collapsible legend, .form-submit, #edit-cancel {
   background: #d4d4d4;
   color: black;
-  font-weight: bold !important;
+  sfont-weight: bold !important;
   border-radius: 2px;
   padding: 0.25em 0.5em;
   display: inline-block;

@@ -2,7 +2,7 @@
 %btn-primary {
     background: $red;
     color: lighten($red, 40%);
-    font-weight: bold !important;
+    sfont-weight: bold !important;
     border-radius: $radius;
     border-color: $red;
     padding: $padding-s $padding-m;
@@ -18,7 +18,7 @@
 %btn {
     background: $dark-gray;
     color: $black;
-    font-weight: bold !important;
+    sfont-weight: bold !important;
     border-radius: $radius;
     padding: $padding-s $padding-m;
     display: inline-block;
