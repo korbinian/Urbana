@@ -1207,7 +1207,7 @@ tr.odd {
   padding: 0;
   margin-right: 1em; }
 
-.form-field-type-taxonomy-term-reference {
+.form-field-type-taxonomy-term-reference, .form-field-type-entityreference {
   float: left;
   width: 14.285%; }
 
