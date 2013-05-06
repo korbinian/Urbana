@@ -126,3 +126,10 @@ tr.odd {
 #edit-cancel {
     @extend %btn;
 }
+
+.page-title {
+    em {
+        font-style: normal;
+        color: $red;
+    }
+}

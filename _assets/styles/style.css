@@ -1175,6 +1175,10 @@ tr.odd {
 .messages {
   margin: 1.35em !important; }
 
+.page-title em {
+  font-style: normal;
+  color: #e74136; }
+
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }
 .lt-ie9 .row {
