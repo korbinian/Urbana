@@ -711,6 +711,9 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0; } }
+.front .flex-control-nav {
+  display: none; }
+
 /* Block Menu ----------------------------------------------------- */
 #block-menu-block-1 {
   overflow: hidden;
