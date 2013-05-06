@@ -155,3 +155,7 @@ tr.odd {
 .fieldset-wrapper {
     padding: 0;
 }
+
+.fieldset-legend {
+    @extend h2;
+}
