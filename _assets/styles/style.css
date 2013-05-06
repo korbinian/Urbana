@@ -812,7 +812,8 @@ html[xmlns] .slides {
   background: red; }
   .einrichtungsbeispiele td {
     padding: 0;
-    background: green; }
+    background: green;
+    width: 20%; }
 
 .node-einrichtungsbeispiel .einrichtungsbeispiel-main {
   float: left;
