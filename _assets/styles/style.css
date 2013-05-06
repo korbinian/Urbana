@@ -707,33 +707,6 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0; } }
-/*
-
-.einrichtungsbeispiele {
-    td {
-        padding: $padding-m;
-    }
-    img {
-        margin: 0;
-    }
-    .field-name-field-beispielnummer {
-        font-size: $font-size-s;
-    }
-    .node-title {
-        font-size: $font-size-m;
-    }
-    .links {
-        display: none;
-    }
-    .field-item {
-        display: none;
-    }
-    .field-item:first-of-type {
-        display: block !important; 
-    }
-}
-
-*/
 /* Block Menu ----------------------------------------------------- */
 #block-menu-block-1 {
   overflow: hidden;
@@ -749,8 +722,7 @@ html[xmlns] .slides {
   list-style: none !important;
   margin: 0 0 2em 0 !important;
   position: relative;
-  display: block;
-  sbackground-repeat: no-repeat; }
+  display: block; }
 
 .menu-block-1 a {
   float: left;
@@ -759,10 +731,7 @@ html[xmlns] .slides {
   height: 150px;
   padding: 0.25em 0.5em;
   background-repeat: no-repeat !important;
-  font-size: 1.1em;
-  spadding-top: 2em;
-  sposition: absolute;
-  sbackground: rgba(255, 255, 255, 0.9); }
+  font-size: 1.1em; }
 
 .holzarten a {
   background: url(assets/blockmenu/1.jpg); }
@@ -839,6 +808,12 @@ html[xmlns] .slides {
       .photogrid figure figcaption b {
         display: block; }
 
+.einrichtungsbeispiele {
+  background: red; }
+  .einrichtungsbeispiele td {
+    padding: 0;
+    background: green; }
+
 .node-einrichtungsbeispiel .einrichtungsbeispiel-main {
   float: left;
   width: 66.6666%; }
@@ -882,8 +857,6 @@ html[xmlns] .slides {
   .node-einrichtungsbeispiel .tab-pane:after {
     clear: both; }
   .node-einrichtungsbeispiel .tab-pane .taxonomy-term {
-    sbackground: red;
-    swidth: 5em;
     float: left;
     margin-right: 1em; }
     .node-einrichtungsbeispiel .tab-pane .taxonomy-term h2 {

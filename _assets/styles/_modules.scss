@@ -296,36 +296,6 @@ html[xmlns] .slides {display: block;}
   .flex-direction-nav .flex-next {opacity: 1; right: 0;}
 }
 
-/*  EINRICHTUNGSBEISPIELE
-//////////////////////////////////////////////////////////////////////////////*/
-/*
-
-.einrichtungsbeispiele {
-    td {
-        padding: $padding-m;
-    }
-    img {
-        margin: 0;
-    }
-    .field-name-field-beispielnummer {
-        font-size: $font-size-s;
-    }
-    .node-title {
-        font-size: $font-size-m;
-    }
-    .links {
-        display: none;
-    }
-    .field-item {
-        display: none;
-    }
-    .field-item:first-of-type {
-        display: block !important; 
-    }
-}
-
-*/
-
 
 
 
@@ -346,26 +316,20 @@ html[xmlns] .slides {display: block;}
 }
 
 .menu-block-1 li {
-  
   list-style: none !important;
   margin: 0 0 $padding-l*2 0 !important;
   position: relative;
-  
   display: block;
-  sbackground-repeat: no-repeat;
 }
 
 .menu-block-1 a {
     float: left;
-  width: 33.3333%;
-  display: block;
-  height: 150px;
-  padding: $padding-s $padding-m;
-  background-repeat: no-repeat !important;
-  font-size: $font-size-l;
-  spadding-top: 2em;
-  sposition: absolute;
-  sbackground: rgba(255,255,255,.9);
+    width: 33.3333%;
+    display: block;
+    height: 150px;
+    padding: $padding-s $padding-m;
+    background-repeat: no-repeat !important;
+    font-size: $font-size-l;
 }
 
 .holzarten a {
@@ -471,6 +435,17 @@ html[xmlns] .slides {display: block;}
     }
 }
 
+/*  EINRICHTUNGSBEISPIELE
+//////////////////////////////////////////////////////////////////////////////*/
+
+.einrichtungsbeispiele {
+    background: red;
+    td {
+        padding: 0;
+        background: green;
+    }
+}
+
 
 /*  EINRICHTUNGSBEISPIEL
 //////////////////////////////////////////////////////////////////////////////*/
@@ -545,8 +520,6 @@ html[xmlns] .slides {display: block;}
             width: 100%;
             @include clearfix();
             .taxonomy-term {
-                sbackground: red;
-                swidth: 5em;
                 float: left;
                 margin-right: $padding-l;
                 h2 {
