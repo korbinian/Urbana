@@ -120,8 +120,11 @@ nav ul, nav ol {
 small, .small {
   font-size: 12px; }
 
-b, strong {
+b, strong, em {
   font-weight: bold; }
+
+em {
+  font-style: normal; }
 
 abbr[title] {
   border-bottom: 1px dotted #d4d4d4; }

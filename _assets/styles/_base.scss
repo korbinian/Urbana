@@ -108,8 +108,11 @@ nav ul, nav ol {
 small, .small {
     font-size: $font-size-s; }
 
-b, strong { 
+b, strong, em { 
     font-weight: bold; }
+
+em {
+    font-style: normal; }
 
 abbr[title] { 
     border-bottom: 1px dotted $dark-gray; }
