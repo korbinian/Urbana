@@ -363,7 +363,7 @@ input:invalid, textarea:invalid {
   width: 15%;
   float: left; }
 
-figure, article img, article iframe, p, ul, ol, dl, table, form, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .spalte1, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .spalte2, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .wohnbereich, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .stil, .action-links, .collapsible, .form-submit {
+figure, article img, article iframe, p, ul, ol, dl, table, form, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .spalte1, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .spalte2, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .wohnbereich, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .stil, .action-links, .collapsible {
   margin: 0 0 1.35em 0; }
 
 .site-header .branding {
@@ -1111,6 +1111,9 @@ body {
 .collapsible legend a {
   color: #000;
   font-weight: bold; }
+
+.form-submit {
+  margin: 0.5em 0; }
 
 .fieldset-wrapper {
   padding: 1em; }

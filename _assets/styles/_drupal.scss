@@ -68,7 +68,7 @@
 
 .form-submit {
     @extend %btn-primary;
-    @extend %margin;
+    margin: $padding-m 0;
 }
 
 .fieldset-wrapper {
