@@ -933,7 +933,8 @@ html[xmlns] .slides {
 
 .node-navigation {
   position: absolute;
-  top: -1.35em;
+  padding: 1em;
+  top: -2.7em;
   left: 66.6666%;
   padding: 0;
   margin: 0;
