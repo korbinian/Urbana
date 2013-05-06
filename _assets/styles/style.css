@@ -951,7 +951,8 @@ html[xmlns] .slides {
     padding: 0.25em; }
 
 .node-navigation.bottom {
-  bottom: 0; }
+  bottom: 0;
+  top: auto; }
 
 body {
   background: #453e3f; }
