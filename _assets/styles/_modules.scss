@@ -626,3 +626,15 @@ html[xmlns] .slides {display: block;}
     left: auto;
 }
 
+/*  DRAGGABLE VIEWS
+//////////////////////////////////////////////////////////////////////////////*/
+
+.draggableviews-processed li.views-row {
+    display: block;
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    cursor: move;
+}
+

@@ -938,6 +938,14 @@ html[xmlns] .slides {
   top: auto;
   left: auto; }
 
+.draggableviews-processed li.views-row {
+  display: block;
+  float: left;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  cursor: move; }
+
 body {
   background: #453e3f; }
 
