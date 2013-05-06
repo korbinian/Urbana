@@ -617,8 +617,11 @@ html[xmlns] .slides {display: block;}
     margin: 0;
     list-style: none;
     @include clearfix();
-    a {
+    li {
         float: left;
+    }
+    a {
+
         display: block;
         background: red;
     }

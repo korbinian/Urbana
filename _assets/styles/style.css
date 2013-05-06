@@ -944,8 +944,9 @@ html[xmlns] .slides {
     display: table; }
   .node-navigation:after {
     clear: both; }
+  .node-navigation li {
+    float: left; }
   .node-navigation a {
-    float: left;
     display: block;
     background: red; }
 
