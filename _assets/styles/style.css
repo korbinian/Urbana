@@ -926,6 +926,7 @@ html[xmlns] .slides {
     margin-right: 2px; }
 
 .node-navigation.bottom {
+  padding-left: 0;
   bottom: -4.05em;
   top: auto;
   left: auto; }

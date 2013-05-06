@@ -608,6 +608,7 @@ html[xmlns] .slides {display: block;}
 }
 
 .node-navigation.bottom { 
+    padding-left: 0;
     bottom: -$margin*3;
     top: auto;
     left: auto;
