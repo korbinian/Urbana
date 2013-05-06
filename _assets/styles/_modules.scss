@@ -635,7 +635,8 @@ html[xmlns] .slides {display: block;}
 }
 
 .node-navigation.bottom { 
-    bottom: -$margin*4;
+    bottom: -$margin*3;
     top: auto;
+    left: auto;
 }
 
