@@ -1216,6 +1216,10 @@ tr.odd {
   float: left;
   width: 100%; }
 
+.vertical-tabs ul.vertical-tabs-list {
+  width: 25em;
+  margin: -1px 0 -1px -25em; }
+
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }
 .lt-ie9 .row {
