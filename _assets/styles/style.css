@@ -707,21 +707,33 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0; } }
-.einrichtungsbeispiele td {
-  padding: 0.5em; }
-.einrichtungsbeispiele img {
-  margin: 0; }
-.einrichtungsbeispiele .field-name-field-beispielnummer {
-  font-size: 12px; }
-.einrichtungsbeispiele .node-title {
-  font-size: 1em; }
-.einrichtungsbeispiele .links {
-  display: none; }
-.einrichtungsbeispiele .field-item {
-  display: none; }
-.einrichtungsbeispiele .field-item:first-of-type {
-  display: block !important; }
+/*
 
+.einrichtungsbeispiele {
+    td {
+        padding: $padding-m;
+    }
+    img {
+        margin: 0;
+    }
+    .field-name-field-beispielnummer {
+        font-size: $font-size-s;
+    }
+    .node-title {
+        font-size: $font-size-m;
+    }
+    .links {
+        display: none;
+    }
+    .field-item {
+        display: none;
+    }
+    .field-item:first-of-type {
+        display: block !important; 
+    }
+}
+
+*/
 /* Block Menu ----------------------------------------------------- */
 #block-menu-block-1 {
   overflow: hidden;
