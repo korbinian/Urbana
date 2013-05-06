@@ -85,11 +85,11 @@
                     <h2>technische Besonderheiten</h2>
                     <?php print render($content['field_besonderheiten']); ?>
                 </div>
-                <div id="tab-1" class="tab-pane">
+                <div id="tab-4" class="tab-pane">
                     <h2>optionale Ausstattung</h2>
                     <?php print render($content['field_ausstattung']); ?>
                 </div>
-                <div id="tab-1" class="tab-pane">
+                <div id="tab-5" class="tab-pane">
                     <h2>Planzeichnungen</h2>
                     
                 </div>
