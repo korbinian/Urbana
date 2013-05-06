@@ -56,7 +56,7 @@
 
 <div class="site-main">
     <div class="row">
-        <main class="site-content">
+        <div class="site-content">
             <?php print $breadcrumb; ?>
             <!--<?php print $messages; ?>-->
             <!--<?php print $feed_icons; ?>-->
@@ -75,13 +75,13 @@
             </div>
             
             <div class="col-right">
-                <img src="http://127.0.0.1:8080/urbana/sites/default/files/blume.png" alt="" class="flower">
+                <img src="<?php print $base_path; ?>/sites/default/files/blume.png" alt="" class="flower">
                 <article>
                     <?php print render($page['front-aside']); ?>
                 </article>
             </div>
 
-        </main>
+        </div>
         
         <aside class="sidebar">
             <?php print render($page['sidebar']); ?>

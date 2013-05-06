@@ -20,7 +20,6 @@
     .call-to-action {
         padding: $padding-l;
         background:  url(assets/ricky.png) no-repeat bottom right;
-        background-size: 8em;
         height: 10em;
         position: relative;
         .block-title {
@@ -396,7 +395,7 @@ html[xmlns] .slides {display: block;}
         top: 10em;
         right: -3em;
         width: 15em;
-        z-index: 9999999; 
+        z-index: 9999; 
     }
 
 }

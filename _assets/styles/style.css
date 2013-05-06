@@ -38,7 +38,7 @@ body, input, select, button {
 body {
   margin: 0; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, main {
   display: block; }
 
 img, iframe {
@@ -379,7 +379,6 @@ figure, article img, article iframe, p, ul, ol, dl, table, form, .node-einrichtu
 .site-header .call-to-action {
   padding: 1em;
   background: url(assets/ricky.png) no-repeat bottom right;
-  background-size: 8em;
   height: 10em;
   position: relative; }
   .site-header .call-to-action .block-title {
@@ -778,7 +777,7 @@ html[xmlns] .slides {
     top: 10em;
     right: -3em;
     width: 15em;
-    z-index: 9999999; }
+    z-index: 9999; }
 
 .front .region-front-aside .field-name-body {
   font-size: 1em; }
@@ -961,7 +960,7 @@ body {
     background: #e74136; }
 
 .sidebar {
-  background: rgba(0, 0, 0, 0.2); }
+  background: #eeeeee; }
 
 .row {
   margin: 0 auto;
@@ -1129,5 +1128,9 @@ tr.odd {
   .item-list ul.pager li.pager-current {
     padding: 0.25em; }
 
+.lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
+  font-size: 1em; }
+.lt-ie9 .row {
+  width: 1240px; }
 .lt-ie9 .site-header {
   background: #eeeeee; }

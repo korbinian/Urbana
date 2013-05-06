@@ -56,7 +56,7 @@
 
 <div class="site-main section">
     <div class="row">
-        <main class="site-content">
+        <div class="site-content">
             <?php print $breadcrumb; ?>
             <!--<?php print $messages; ?>-->
             <!--<?php print $feed_icons; ?>-->
@@ -73,7 +73,7 @@
             <?php print render($page['content']); ?>
             
             </article>
-        </main>
+        </div>
         
         <aside class="sidebar">
             <?php print render($page['sidebar']); ?>
