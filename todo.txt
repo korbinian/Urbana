@@ -1,0 +1,2 @@
+einrichtungsbeispiel slider mit thumbnails
+flippy next button

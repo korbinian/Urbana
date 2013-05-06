@@ -1,0 +1,92 @@
+
+
+/*  GLOBAL LAYOUT
+//////////////////////////////////////////////////////////////////////////////*/
+
+.row {
+    margin: 0 auto;
+    max-width: $max-width;
+    padding: 0 $padding-l;
+    @include clearfix();
+}
+
+.site-header {
+    .branding {
+        @extend %col-75;
+    }
+    .call-to-action {
+        @extend %col-25;
+    }
+}
+
+.site-nav {
+    .nav-main {
+        @extend %col-100;
+    }
+
+}
+
+.site-main {
+    .site-content, .sub {
+        @extend %col-85;
+    }
+    .sidebar {
+        @extend %col-15;
+        float: right;
+        margin-top: 2em;
+    }
+}
+
+
+
+
+.site-footer {
+    .site-info {
+        @extend %col-100;
+    }
+    .footer-first {
+        @extend %col-28;
+    }
+    .footer-second {
+        @extend %col-28;
+    }
+    .footer-third {
+        @extend %col-28;
+    }
+}
+
+.page-admin {
+    .site-main .row {
+        max-width: 100%;
+    }
+    .site-main .site-content, .site-main .sub {
+        @extend %col-100;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+
+/*  PAGE-SPECIFIC LAYOUT
+//////////////////////////////////////////////////////////////////////////////*/
+
+.front {
+    .site-content {
+        @include clearfix();
+    }
+    .col-left {
+        @extend %col-50;
+        padding-right: $padding-l;
+    }
+    .col-right {
+        @extend %col-50;
+        padding-left: $padding-l;
+    }
+}
+
+
+.sub {
+    padding: $padding-l*2;
+}
+

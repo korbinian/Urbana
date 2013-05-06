@@ -1,0 +1,272 @@
+@include font-face(Questrial, '../../_assets/fonts/questrial/Questrial-Regular-webfont', normal);
+@include font-face(Fontawesome, '../../_assets/fonts/fontawesome/fontawesome-webfont', normal);
+
+* { 
+    @include box-sizing(border-box); }
+
+html {
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; }
+
+body, input, select, button {
+    font-family: $copy;
+    line-height: $line-height;
+    font-size: 12px;
+    color: $text-color;
+    @media (min-width: 1040px) { font-size: 14px; } 
+    @media (min-width: 1120px) { font-size: $font-size; } }
+
+body {
+    margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { 
+    display: block; }
+
+img, iframe {
+    max-width: 100%; }
+
+img { 
+    border: 0; 
+    -ms-interpolation-mode: bicubic; 
+    vertical-align: middle; 
+    max-width: 100%; 
+    height: auto !important; }
+
+figure { 
+    @extend %margin;
+
+    img {
+        border: 0 solid !important;
+        box-shadow: 0 0 0 #fff !important;
+    } }
+
+article {
+    img, iframe {
+        @extend %margin; } }
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    @include transition(); 
+    &:hover {
+        color: darken($blue, 20%);
+        @include transition();
+    }
+    &:hover, &:active { 
+        outline: 0; } }
+
+p {
+    @extend %margin; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: $display; }
+
+h1 {
+    font-size: $font-size-xxl;
+    margin: 0 0 $margin/2 0;
+    line-height: 1;
+     }
+
+h2 {
+    font-size: $font-size-xl;
+    margin: 0 0 $margin/2 0;
+    line-height: 1.1; }
+
+h3 {
+    font-size: $font-size-l;
+    margin: 0 0 $margin/2 0;
+    line-height: 1.2; }
+
+h4, h5, h6 {
+    font-size: $font-size-m;
+    margin: 0; }
+
+ul, ol, dl {
+    @extend %margin; }
+
+dl dd {
+    margin: 0;padding: 0;
+}
+
+article {
+    ul, ol {
+        padding: 0 0 0 1.35em; } }
+
+dd { 
+    margin: 0 0 $margin 0; 
+    padding: 0 0 0 1.35em; }
+
+nav ul, nav ol { 
+    list-style: none; 
+    list-style-image: none; 
+    margin: 0; 
+    padding: 0; }
+
+small, .small {
+    font-size: $font-size-s; }
+
+b, strong { 
+    font-weight: bold; }
+
+abbr[title] { 
+    border-bottom: 1px dotted $dark-gray; }
+
+hr { 
+    display: block; 
+    height: 1px; 
+    border: 0; 
+    border-top: 1px solid $gray; 
+    margin: $margin 0; 
+    padding: 0; }
+
+pre, code, kbd, samp { 
+    font-family: $mono; 
+    font-size: $font-size; }
+
+pre { 
+    white-space: pre; 
+    white-space: pre-wrap; 
+    word-wrap: break-word; }
+
+sub, sup { 
+    font-size: $font-size-s; 
+    line-height: 0; 
+    position: relative; 
+    vertical-align: baseline; }
+sup { 
+    top: -0.5em; }
+sub { 
+    bottom: -0.25em; }
+
+q { 
+    quotes: none; }
+
+q:before, q:after { 
+    content: ""; 
+    content: none; }
+
+blockquote { 
+    font-style: italic;
+    margin: $padding-l; }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    border-spacing: 0;
+    @extend %margin;
+    * {
+        @include box-sizing(content-box);
+    }
+    td, th {
+        vertical-align: top;
+        padding: $padding-l; } }
+
+form { 
+    @extend %margin; }
+
+fieldset { 
+    border: 0; 
+    margin: 0; 
+    padding: 0; }
+
+label { 
+    cursor: pointer; }
+
+input {
+  border: $border;
+  background: $white;
+  padding: $padding-m;
+  margin: 0; }
+
+input, textarea, button {
+    border-color: $dark-gray;
+    font-size: 100%; 
+    margin: 0; 
+    vertical-align: baseline; 
+    *vertical-align: middle; }
+
+button, input { 
+    line-height: normal; 
+    *overflow: visible; }
+
+table button, table input { 
+    *overflow: auto; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { 
+    cursor: pointer; 
+    -webkit-appearance: button; }
+
+input[type="search"] { 
+    -webkit-appearance: textfield; 
+    @include box-sizing(content-box); }
+
+input[type="search"]::-webkit-search-decoration { 
+    -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { 
+    border: 0; 
+    padding: 0; }
+
+textarea { 
+    overflow: auto; 
+    vertical-align: top; 
+    resize: vertical; 
+    padding: $padding-m; }
+
+legend { 
+    border: 0; 
+    *margin-left: -7px; 
+    padding: 0; }
+
+input:invalid, textarea:invalid { 
+    background-color: 
+    lighten($red, 30%); }
+
+::-moz-selection { 
+    background: $blue; 
+    color: $white; 
+    text-shadow: none; }
+::selection { 
+    background: $blue; 
+    color: $white;
+    text-shadow: none; }
+
+.checklist {
+    list-style: none;
+    li {
+        position: relative;
+    }
+    li:before {
+        font-family: $icons;
+        content: "\f00c";
+        color: $red;
+        position: absolute;
+        left: -1.35em; } }
+
+.pointless {
+    list-style: none;
+    img {
+        margin-right: $padding-l;
+        float: left;
+    }
+    li {
+        margin-bottom: $padding-l;
+        @include clearfix();
+    }
+}
+
+.urbana {
+    font-weight: bold;
+    font-family: $display;
+    color: $blue;
+    span {
+        color: $red; } }
+
+.site-footer .urbana {
+    color: silver;
+    span {
+        color: $gray; } }

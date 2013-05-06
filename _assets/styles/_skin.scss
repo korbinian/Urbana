@@ -1,0 +1,48 @@
+body {
+    background: $dark; }
+
+.site-header {
+    background: $gray;
+    @include linear-gradient(160deg, #fff 0%, rgb(150,150,150) 100%); }
+
+.site-nav {
+    border-bottom: 2px solid #000; }
+
+.site-main {
+    background: #fff; }
+
+.site-footer {
+    border-top: 2px solid #000; }
+
+.site-nav {
+    color: silver;
+    .nav-main {
+        background: $dark;
+        margin-top: -1.7em;
+        padding: 2px 2px 0 2px;
+        border-top-right-radius: $radius;
+        border-top-left-radius: $radius;
+        a {
+            border-radius: $radius;
+            color: $gray;
+            font-weight: bold;
+        }
+    } }
+
+.site-footer {
+    color: silver;
+    a {
+        color: $gray;
+        font-weight: bold; } }
+
+.nav-main a {
+    position: relative;
+    &:hover {
+        background: $red;
+    }
+}
+
+
+.sidebar {
+    background: rgba(0,0,0,.2);
+}

@@ -1,0 +1,118 @@
+$max-width: 80em;
+$columns: 12;
+$gutters: .75%;
+$radius: 2px;
+
+$sans: Lato, PTSans, Helvetica, Arial, sans-serif;
+$serif: 'Bookman Old Style',Bookman,'URW Bookman L','Palatino Linotype', serif;
+$mono: consolas, courier, monospace;
+$special: 'BebasNeueRegular', Helvetica, Arial, sans-serif;
+$icons: FontAwesome;
+
+$copy: Questrial;
+$display: Questrial, Lato, "Questrial", "Century Gothic", PTSans, Arial, helvetica, sans-serif;
+
+
+$font-size: 1em;
+$font-size-s: 12px;
+$font-size-m: 1em;
+$font-size-l: 1.1em;
+$font-size-xl: 1.3em;
+$font-size-xxl: 1.8em;
+$line-height: 1.35;
+$padding: 5px;
+$p: 20px;
+
+$margin: 1.35em;
+
+$padding-s: .25em;
+$padding-m: .5em;
+$padding-l: 1em;
+
+$spacing: 2px;
+
+
+$background: #fff;
+$text: #111;
+$links: #2d7dc5;
+$highlight: #ff8800;
+$mark: #004f6e;
+
+$white: #fff;
+$gray: #eee;
+$dark-gray: darken($gray, 10%);
+$black: #000;
+$dark: #453E3F;
+
+$blue: #145497;
+$red: #E74136;
+$brown: #291709;
+
+$border: 1px solid darken($gray, 10%);
+
+$text-color: $dark;
+$link-color: $blue;
+
+@mixin rounded($radius: $radius) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius; }
+
+@mixin roundedSides($topLeft, $topRight, $bottomRight, $bottomLeft) {
+    -moz-border-radius-topleft: $topLeft;
+    -moz-border-radius-topright: $topRight;
+    -moz-border-radius-bottomright: $bottomRight;
+    -moz-border-radius-bottomleft: $bottomLeft;
+    border-top-left-radius: $topLeft;
+    border-top-right-radius: $topRight;
+    border-bottom-right-radius: $bottomRight;
+    border-bottom-left-radius: $bottomLeft; }
+
+@mixin textShadow($x-axis:1px, $y-axis:1px, $casting:1px, $color:#FFF) {
+    text-shadow: $x-axis $y-axis $casting $color; }
+
+@mixin shadow( $off-y:1px, $off-x:1px, $blur:2px, $color:#444) {
+    -moz-box-shadow: $off-y $off-x $blur $color;
+    -webkit-box-shadow: $off-y $off-x $blur $color;
+    box-shadow: $off-y $off-x $blur $color; }
+
+@mixin gradient($baseColor:#333, $toColor:#111) {
+    background-color: $baseColor;
+    background-image: -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
+    background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor)); /* Saf4+, Chrome */
+    background-image: linear-gradient(top,$baseColor, $toColor); }
+
+@mixin transition($property:all, $duration:0.2s, $function: ease-in-out) {
+    -moz-transition: $property $duration $function; /* FF3.7+ */
+    -o-transition: $property $duration $function; /* Opera 10.5 */
+    -webkit-transition: $property $duration $function; /* Saf3.2+, Chrome */
+    transition: $property $duration $function; }
+
+@mixin transform($scale, $rotate, $trans-x, $trans-y, $skew-x, $skew-y) {
+    -moz-transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+    -webkit-transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+    -o-transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+    -ms-transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y);
+    transform: scale($scale) rotate($rotate) translate($trans-x, $trans-y) skew(skew-x, skew-y); }
+
+@mixin scale($scale:1) {
+    -moz-transform: scale($scale);
+    -webkit-transform: scale($scale);
+    -o-transform: scale($scale);
+    -ms-transform: scale($scale);
+    transform: scale($scale); }
+
+
+
+@mixin clearfix {
+    *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  } }
