@@ -23,8 +23,11 @@
         <?php print render($content); ?>
 
         <?php endif; ?>
-
-        
+    
+        <ul id="node-navigation">
+            <li class="next"><?php print pn_node($node, 'n'); ?></li>
+            <li class="prev"><?php print pn_node($node, 'p'); ?></li>
+    </ul> 
 
 
         <?php if ($view_mode == 'full'): ?>

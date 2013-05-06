@@ -140,3 +140,48 @@ function urbana_preprocess_block(&$variables, $hook) {
   $variables['classes_array'][] = 'count-' . $variables['block_id'];
 }
 // */
+
+function pn_node($node, $mode = 'n') {
+  if (!function_exists('prev_next_nid')) {
+    return NULL;
+  }
+
+
+  switch($mode) {
+    case 'p':
+      $n_nid = prev_next_nid($node->nid, 'prev');
+      $link_text = 'previous';
+      break;
+
+    case 'n':
+      $n_nid = prev_next_nid($node->nid, 'next');
+      $link_text = 'next';
+      break;
+
+    default:
+      return NULL;
+  }
+
+
+
+  if ($n_nid) {
+    $n_node = node_load($n_nid);
+
+    $options = array(
+      'attributes' => array('class' => 'thumbnail'),
+      'html'  => TRUE,
+    );
+
+
+    switch($n_node->type) {
+      // For image nodes only
+      case 'einrichtungsbeispiel':
+        // This is an image node, get the thumbnail
+        $html .= l($link_text, "node/$n_nid", array('html' => TRUE));
+        return $html;
+
+      default:
+        // Add other node types here if you want.
+    }
+  }
+}
