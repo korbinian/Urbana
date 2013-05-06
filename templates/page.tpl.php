@@ -57,6 +57,7 @@
 <div class="site-main section">
     <div class="row">
         <div class="site-content">
+        hallo
             <?php print $breadcrumb; ?>
             <!--<?php print $messages; ?>-->
             <!--<?php print $feed_icons; ?>-->
