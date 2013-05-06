@@ -1183,11 +1183,14 @@ tr.odd {
   font-style: normal;
   color: #e74136; }
 
-.admin-menu .site-content {
+.page-node-edit .site-content {
+  width: 100%;
   font-size: 12px !important; }
-  .admin-menu .site-content textarea {
+  .page-node-edit .site-content textarea {
     font-family: Questrial;
     padding: 1em; }
+.page-node-edit .sidebar {
+  display: none; }
 
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }

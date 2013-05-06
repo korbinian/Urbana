@@ -134,12 +134,16 @@ tr.odd {
     }
 }
 
-.admin-menu {
+.page-node-edit {
     .site-content {
+        width: 100%;
         font-size: $font-size-s !important;
         textarea {
             font-family: $copy;
             padding: $padding-l;
         }
+    }
+    .sidebar {
+        display: none;
     }
 }
