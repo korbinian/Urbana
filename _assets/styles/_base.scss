@@ -190,7 +190,8 @@ input, textarea, button {
     *vertical-align: middle; }
 
 button, input { 
-    line-height: normal; 
+    line-height: 1.35;
+    font-weight: bold; 
     *overflow: visible; }
 
 table button, table input { 
