@@ -136,7 +136,8 @@ tr.odd {
 
 .page-node-edit {
     .row {
-        width: 100% !important;
+        width: 100%;
+        max-width: 100%;
     }
     .site-content {
         width: 100%;
