@@ -139,6 +139,7 @@ tr.odd {
         font-size: $font-size-s !important;
         textarea {
             font-family: $copy;
+            padding: $padding-l;
         }
     }
 }
