@@ -605,8 +605,21 @@ html[xmlns] .slides {display: block;}
 /*  NODE NAVIGATION
 //////////////////////////////////////////////////////////////////////////////*/
 
+.node {
+    position: relative;
+}
+
 .node-navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @include clearfix();
     a {
+        float: left;
+        display: block;
         background: red;
     }
     .prev {

@@ -928,8 +928,26 @@ html[xmlns] .slides {
         }
     }
 } */
-.node-navigation a {
-  background: red; }
+.node {
+  position: relative; }
+
+.node-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  *zoom: 1; }
+  .node-navigation:before, .node-navigation:after {
+    content: " ";
+    display: table; }
+  .node-navigation:after {
+    clear: both; }
+  .node-navigation a {
+    float: left;
+    display: block;
+    background: red; }
 
 body {
   background: #453e3f; }
