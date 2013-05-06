@@ -1154,7 +1154,7 @@ tr.odd {
   border-top: 0 solid !important; }
 
 .messages {
-  margin: 1.35em; }
+  margin: 1.35em !important; }
 
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }
