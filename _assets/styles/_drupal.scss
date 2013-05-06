@@ -137,5 +137,8 @@ tr.odd {
 .admin-menu {
     .site-content {
         font-size: $font-size-s !important;
+        textarea {
+            font-family: $copy;
+        }
     }
 }

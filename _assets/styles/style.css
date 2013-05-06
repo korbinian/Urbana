@@ -1185,6 +1185,8 @@ tr.odd {
 
 .admin-menu .site-content {
   font-size: 12px !important; }
+  .admin-menu .site-content textarea {
+    font-family: Questrial; }
 
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }
