@@ -111,3 +111,10 @@ tr.odd {
         padding: $padding-s;
     }
 }
+
+
+.views-displays {
+    .tabs {
+        border-top:0 solid !important;
+    }
+}
