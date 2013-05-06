@@ -952,7 +952,7 @@ html[xmlns] .slides {
     padding: 0.25em; }
 
 .node-navigation.bottom {
-  bottom: 0;
+  bottom: -2.7em;
   top: auto; }
 
 body {
