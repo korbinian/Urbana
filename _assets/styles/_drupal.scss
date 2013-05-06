@@ -133,3 +133,9 @@ tr.odd {
         color: $red;
     }
 }
+
+.admin-menu {
+    .site-content {
+        font-size: $font-size-m !important;
+    }
+}

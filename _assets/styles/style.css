@@ -1183,6 +1183,9 @@ tr.odd {
   font-style: normal;
   color: #e74136; }
 
+.admin-menu .site-content {
+  font-size: 1em !important; }
+
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }
 .lt-ie9 .row {
