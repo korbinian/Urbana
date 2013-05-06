@@ -452,11 +452,14 @@ html[xmlns] .slides {display: block;}
     figure {
         float: left;
         margin-right: $padding-l*2;
-        margin-bottom: $margin;
+        margin-bottom: $margin*2;
+        width: 6em;
+        position: relative;
         img {
             margin: 0 0 5px 0;
         }
         figcaption {
+            position: absolute;
             font-size: $font-size-s;
             b {
                 display: block;

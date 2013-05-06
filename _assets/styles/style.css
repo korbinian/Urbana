@@ -816,10 +816,13 @@ html[xmlns] .slides {
   .photogrid figure {
     float: left;
     margin-right: 2em;
-    margin-bottom: 1.35em; }
+    margin-bottom: 2.7em;
+    width: 6em;
+    position: relative; }
     .photogrid figure img {
       margin: 0 0 5px 0; }
     .photogrid figure figcaption {
+      position: absolute;
       font-size: 12px; }
       .photogrid figure figcaption b {
         display: block; }
