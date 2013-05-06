@@ -24,13 +24,15 @@
 
         <?php endif; ?>
     
-        <ul id="node-navigation">
-            <li class="next"><?php print pn_node($node, 'n'); ?></li>
-            <li class="prev"><?php print pn_node($node, 'p'); ?></li>
-    </ul> 
+        
 
 
         <?php if ($view_mode == 'full'): ?>
+        
+        <ul class="node-navigation">
+            <li class="next"><?php print pn_node($node, 'n'); ?></li>
+            <li class="prev"><?php print pn_node($node, 'p'); ?></li>
+        </ul> 
 
         <div class="einrichtungsbeispiel-main">
             <div class="flexslider">
