@@ -623,6 +623,8 @@ html[xmlns] .slides {display: block;}
     a {
         display: block;
         padding: $padding-s;
+        border: 1px solid $gray;
+        margin-right: $spacing;
     }
     .prev {
 

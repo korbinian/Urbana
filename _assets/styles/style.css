@@ -948,7 +948,9 @@ html[xmlns] .slides {
     float: right; }
   .node-navigation a {
     display: block;
-    padding: 0.25em; }
+    padding: 0.25em;
+    border: 1px solid #eeeeee;
+    margin-right: 2px; }
 
 .node-navigation.bottom {
   bottom: -2.7em;
