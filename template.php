@@ -150,12 +150,12 @@ function pn_node($node, $mode = 'n') {
   switch($mode) {
     case 'p':
       $n_nid = prev_next_nid($node->nid, 'prev');
-      $link_text = 'zurück';
+      $link_text = '&larr; voriges Beispiel';
       break;
 
     case 'n':
       $n_nid = prev_next_nid($node->nid, 'next');
-      $link_text = 'vor';
+      $link_text = 'nächstes Beispiel &rarr;';
       break;
 
     default:
