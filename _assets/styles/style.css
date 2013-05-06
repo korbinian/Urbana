@@ -1128,3 +1128,6 @@ tr.odd {
       padding: 0.25em; }
   .item-list ul.pager li.pager-current {
     padding: 0.25em; }
+
+.lt-ie9 .site-header {
+  background: #eeeeee; }
