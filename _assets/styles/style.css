@@ -1208,8 +1208,8 @@ tr.odd {
   margin-right: 1em; }
 
 .form-field-type-taxonomy-term-reference {
-  display: inline-block;
-  width: 25%; }
+  float: left;
+  width: 14.285%; }
 
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }
