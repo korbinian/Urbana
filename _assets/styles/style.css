@@ -928,6 +928,9 @@ html[xmlns] .slides {
         }
     }
 } */
+.node-navigation a {
+  background: red; }
+
 body {
   background: #453e3f; }
 
