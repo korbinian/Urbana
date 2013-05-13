@@ -398,6 +398,9 @@
     td {
         padding: 0 $padding-m $padding-m 0;
         width: 20% !important;
+        img {
+            width: 100%;
+        }
     }
 }
 
