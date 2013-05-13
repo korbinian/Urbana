@@ -7,8 +7,9 @@ base theme                         = zen
 stylesheets[all][]                 = _assets/styles/style.css
 
 scripts[]                          = _assets/scripts/modernizr-2.0.6.min.js
+scripts[]                          = _assets/scripts/respond.min.js
 scripts[]                          = _assets/scripts/jquery.easytabs.min.js
-scripts[]                          = _assets/scripts/jquery.flexslider.js
+scripts[]                          = _assets/scripts/jquery.flexslider.min.js
 
 regions[header]                    = Header
 regions[navigation]                = Navigation
