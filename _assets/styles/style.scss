@@ -13,10 +13,19 @@
 .flex-control-nav {
     @include clearfix();
     li {
-        float:left;
-        width: 20%;
+        float: left;
+        width: 18%;
+        margin-right: 2%;
         img {
 
         }
     }
+}
+
+.flex-direction-nav {
+    display: none;
+}
+
+.flexslider img {
+    margin: 0;
 }
