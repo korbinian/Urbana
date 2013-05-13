@@ -1228,3 +1228,6 @@ tr.odd {
   width: 1240px; }
 .lt-ie9 .site-header {
   background: #eeeeee; }
+
+* {
+  color: red; }
