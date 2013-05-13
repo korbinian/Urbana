@@ -21,9 +21,8 @@
 
         <script>
             jQuery(document).ready(function(){
-                jQuery('.flexslider').flexslider();
-                jQuery('.flexslider-hauptbild').flexslider({
-                    animation: "slide",
+                jQuery('.front .flexslider').flexslider();
+                jQuery('.not-front .flexslider').flexslider({
                     controlNav: "thumbnails" 
                 });
                 jQuery('#tab-container').easytabs();

@@ -8,3 +8,15 @@
 @import "print";
 @import "drupal";
 @import "ie";
+
+
+.flex-control-nav {
+    @include clearfix();
+    li {
+        float:left;
+        width: 20%;
+        img {
+
+        }
+    }
+}

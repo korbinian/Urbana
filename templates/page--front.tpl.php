@@ -75,7 +75,7 @@
             </div>
             
             <div class="col-right">
-                <img src="<?php print $base_path; ?>/sites/default/files/blume.png" alt="" class="flower">
+                <img src="<?php print $base_path; ?>sites/default/files/blume.png" alt="" class="flower">
                 <article>
                     <?php print render($page['front-aside']); ?>
                 </article>
