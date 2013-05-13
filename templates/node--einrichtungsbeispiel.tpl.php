@@ -9,7 +9,6 @@
             </ul>
         </div>
 
-
         <?php print render($content['field_beispielnummer']); ?>
         
         <?php print render($title_prefix); ?>
@@ -25,8 +24,6 @@
         <?php endif; ?>
     
         
-
-
         <?php if ($view_mode == 'full'): ?>
         
         <ul class="node-navigation top">
@@ -40,14 +37,11 @@
                     <?php print render($content['field_hauptbild']); ?>
                 </ul>
             </div>
-            
             <div class="beispielnummer">
                 <small>
                     <?php print render($content['field_beispielnummer']); ?>
                 </small>
             </div>
-            
-            
         </div>
 
         <div class="einrichtungsbeispiel-details">
@@ -75,7 +69,6 @@
                 </ul>
                 <div id="tab-1" class="tab-pane">
                     <h2>Detailbilder</h2>
-                    
                 </div>
                 <div id="tab-2" class="tab-pane">
                     <h2>Material</h2>

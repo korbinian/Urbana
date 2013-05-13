@@ -22,7 +22,6 @@
         <script>
             jQuery(document).ready(function(){
                 jQuery('.flexslider').flexslider();
-
                 jQuery('#tab-container').easytabs();
             });
         </script>
