@@ -6,16 +6,8 @@ body {
     @include linear-gradient(160deg, #fff 0%, rgb(150,150,150) 100%); }
 
 .site-nav {
-    border-bottom: 2px solid #000; }
-
-.site-main {
-    background: #fff; }
-
-.site-footer {
-    border-top: 2px solid #000; }
-
-.site-nav {
     color: silver;
+    border-bottom: 2px solid #000;
     .nav-main {
         background: $dark;
         margin-top: -1.7em;
@@ -23,26 +15,30 @@ body {
         border-top-right-radius: $radius;
         border-top-left-radius: $radius;
         a {
+            position: relative;
             border-radius: $radius;
             color: $gray;
             font-weight: bold;
+            &:hover {
+                background: $red;
+            }
         }
-    } }
+    } 
+}
+
+.site-main {
+    background: #fff;
+    .sidebar {
+        background: $gray;
+    } 
+}
 
 .site-footer {
+    border-top: 2px solid #000;
     color: silver;
     a {
         color: $gray;
-        font-weight: bold; } }
-
-.nav-main a {
-    position: relative;
-    &:hover {
-        background: $red;
-    }
+        font-weight: bold; 
+    } 
 }
 
-
-.sidebar {
-    background: $gray;
-}

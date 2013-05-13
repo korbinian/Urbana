@@ -1,7 +1,6 @@
-
 .site-header, .site-footer {
     .block-title {
-        @extend .visuallyhidden;
+        @extend %hidden;
     }
 }
 
@@ -29,7 +28,6 @@
         }
     }
 }
-
 
 .form-actions {
     input[type="submit"] {
@@ -86,32 +84,30 @@ input[type="checkbox"] {
     color: gray;
 }
 
-tr.even,
-tr.odd {
+tr.even, tr.odd {
   border-bottom: 2px solid #fff;
 }
 
 .item-list {
     float: left;
     width: 100%;
-}
-.item-list ul.pager {
-    text-align: left;
-    @include clearfix();
-    li {
-        float: left;
-        margin: 0;
-        padding: 0;
-        a {
-            display: block;
+    ul.pager {
+        text-align: left;
+        @include clearfix();
+        li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            a {
+                display: block;
+                padding: $padding-s;
+            }
+        }
+        li.pager-current {
             padding: $padding-s;
         }
     }
-    li.pager-current {
-        padding: $padding-s;
-    }
 }
-
 
 .views-displays {
     .tabs {
@@ -180,4 +176,8 @@ tr.odd {
 .vertical-tabs ul.vertical-tabs-list {
     width: 25em;
     margin: -1px 0 -1px -25em;
+}
+
+.sub {
+    padding: $padding-l*2;
 }

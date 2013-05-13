@@ -26,7 +26,7 @@ body {
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, main { 
     display: block; }
 
-img, iframe {
+img, iframe, svg {
     max-width: 100%; }
 
 img { 
@@ -38,11 +38,9 @@ img {
 
 figure { 
     @extend %margin;
-
     img {
         border: 0 solid !important;
-        box-shadow: 0 0 0 #fff !important;
-    } }
+        box-shadow: 0 0 0 #fff !important; } }
 
 article {
     img, iframe {
@@ -54,8 +52,7 @@ a {
     @include transition(); 
     &:hover {
         color: darken($blue, 20%);
-        @include transition();
-    }
+        @include transition(); }
     &:hover, &:active { 
         outline: 0; } }
 
@@ -63,49 +60,44 @@ p {
     @extend %margin; }
 
 h1, h2, h3, h4, h5, h6 {
+    font-size: $font-size-m;
+    font-family: $display;
     font-weight: normal;
-    font-family: $display; }
+    margin: 0; }
+
+h1, h2, h3 {
+    margin: 0 0 $margin/2 0; }
 
 h1 {
     font-size: $font-size-xxl;
-    margin: 0 0 $margin/2 0;
-    line-height: 1;
-     }
+    line-height: 1; }
 
 h2 {
     font-size: $font-size-xl;
-    margin: 0 0 $margin/2 0;
     line-height: 1.1; }
 
 h3 {
     font-size: $font-size-l;
-    margin: 0 0 $margin/2 0;
     line-height: 1.2; }
-
-h4, h5, h6 {
-    font-size: $font-size-m;
-    margin: 0; }
 
 ul, ol, dl {
     @extend %margin; }
 
 dl dd {
-    margin: 0;padding: 0;
-}
+    @extend %mp0; }
 
 article {
     ul, ol {
-        padding: 0 0 0 1.35em; } }
+        padding: 0 0 0 $margin; } }
 
 dd { 
     margin: 0 0 $margin 0; 
-    padding: 0 0 0 1.35em; }
+    padding: 0 0 0 $margin; }
 
 nav ul, nav ol { 
     list-style: none; 
     list-style-image: none; 
-    margin: 0; 
-    padding: 0; }
+    @extend %mp0; }
 
 small, .small {
     font-size: $font-size-s; }
@@ -164,8 +156,7 @@ table {
     border-spacing: 0;
     @extend %margin;
     * {
-        @include box-sizing(content-box);
-    }
+        @include box-sizing(content-box); }
     td, th {
         vertical-align: top;
         padding: $padding-l; } }
@@ -175,8 +166,7 @@ form {
 
 fieldset { 
     border: 0; 
-    margin: 0; 
-    padding: 0; }
+    @extend %mp0; }
 
 label { 
     cursor: pointer; }
@@ -195,7 +185,7 @@ input, textarea, button {
     *vertical-align: middle; }
 
 button, input { 
-    line-height: 1.35;
+    line-height: $line-height;
     font-weight: bold; 
     *overflow: visible; }
 
@@ -244,26 +234,22 @@ input:invalid, textarea:invalid {
 .checklist {
     list-style: none;
     li {
-        position: relative;
-    }
+        position: relative; }
     li:before {
         font-family: $icons;
         content: "\f00c";
         color: $red;
         position: absolute;
-        left: -1.35em; } }
+        left: -$margin; } }
 
 .pointless {
     list-style: none;
     img {
         margin-right: $padding-l;
-        float: left;
-    }
+        float: left; }
     li {
         margin-bottom: $padding-l;
-        @include clearfix();
-    }
-}
+        @include clearfix(); } }
 
 .urbana {
     font-weight: bold;

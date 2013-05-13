@@ -1,8 +1,38 @@
+%hidden {
+    display: none;
+}
+
+%margin {
+    margin: 0 0 $margin 0;
+}
+
+%mp0 {
+    margin: 0;
+    padding: 0;
+}
+
+%bordered {
+    border: 4px solid #fff; 
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+
+%btn {
+    background: $dark-gray;
+    color: $black;
+    border-radius: $radius;
+    padding: $padding-s $padding-m;
+    display: inline-block;
+    text-decoration: none;
+    @include transition();
+    &:hover {
+        background: darken($dark-gray, 10%);
+        @include transition();
+    }
+}
 
 %btn-primary {
     background: $red;
     color: lighten($red, 40%);
-    sfont-weight: bold !important;
     border-radius: $radius;
     border-color: $red;
     padding: $padding-s $padding-m;
@@ -11,21 +41,6 @@
     @include transition();
     &:hover {
         background: darken($red, 10%);
-        @include transition();
-    }
-}
-
-%btn {
-    background: $dark-gray;
-    color: $black;
-    sfont-weight: bold !important;
-    border-radius: $radius;
-    padding: $padding-s $padding-m;
-    display: inline-block;
-    text-decoration: none;
-    @include transition();
-    &:hover {
-        background: darken($dark-gray, 10%);
         @include transition();
     }
 }
@@ -94,16 +109,6 @@
     width: 10%;
     float: left;
 }
-
-%margin {
-    margin: 0 0 $margin 0;
-}
-
-%bordered {
-    border: 4px solid #fff; 
-    box-shadow: 0 0 3px rgba(0,0,0,.2);
-}
-
 
 
 

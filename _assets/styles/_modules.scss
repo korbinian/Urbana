@@ -1,4 +1,22 @@
 
+/*  TOC:
+
+    HEADER
+    NAV
+    MAIN
+    FOOTER
+    FRONT
+    PAGE
+    SLIDER
+    BLOCK MENU
+    PHOTOGRID
+    EINRICHTUNGSBEISPIELE
+    EINRICHTUNGSBEISPIEL
+    TABS
+    NODE NAVIGATION
+    DRAGGABLE VIEWS
+//////////////////////////////////////////////////////////////////////////////*/
+
 
 /*  HEADER
 //////////////////////////////////////////////////////////////////////////////*/
@@ -79,7 +97,7 @@
     .search {
         padding: 0 $padding-l 0 $padding-l;
         #search-block-form {
-            display: none;
+            @extend %hidden;
             position: relative;
             input {
                 border: 0 solid;
@@ -110,7 +128,6 @@
     .site-content {
         padding: $padding-l*2;
         .breadcrumb {
-            
             margin: 0 0 $margin 0;
             ol {
                 @include clearfix();
@@ -120,7 +137,6 @@
                 }
             }
         }
-
     }
     .sidebar {
         padding: $padding-l 2px 0 2px;
@@ -135,7 +151,6 @@
             padding: 0;
             margin: 0 0 $margin 0;
             li {
-
                 a {
                     display: block;
                     text-decoration: none;
@@ -153,7 +168,6 @@
 
 /*  FOOTER
 //////////////////////////////////////////////////////////////////////////////*/
-
 
 .site-footer {
     color: rgba(0,0,0,.7);
@@ -219,103 +233,95 @@
     }
 }
 
+/*  FRONT
+//////////////////////////////////////////////////////////////////////////////*/
+
+.front {
+    .col-right {
+        position: relative;
+        .flower {
+            position: absolute;
+            top: 10em;
+            right: -3em;
+            width: 15em;
+            z-index: 9999; 
+        }
+    }
+    .region-front-aside .field-name-body {
+        font-size: $font-size-m;
+    }
+    .field-name-field-col-left {
+        width: 100% !important;
+    }
+    .flex-control-nav, .flex-direction-nav {
+        @extend %hidden;
+    }
+}
+
+/*  PAGE
+//////////////////////////////////////////////////////////////////////////////*/
+
+.page-node {
+    .content {
+        @include clearfix();
+    }
+    .field-label {
+        @extend %hidden;
+    }
+    .field-name-body {
+        margin-bottom: $margin;
+        font-size: $font-size-l;
+    }
+    .field-name-field-col-left {
+        float: left;
+        width: 50%;
+        padding-right: $padding-l;
+    }
+    .field-name-field-col-right {
+        float: right;
+        width: 50%;
+        padding-left: $padding-l;
+    }
+}
+
 /*  SLIDER
 //////////////////////////////////////////////////////////////////////////////*/
 
-
-
- 
-/* Browser Resets */
-.flex-container a:active,
-.flexslider a:active,
-.flex-container a:focus,
-.flexslider a:focus  {outline: none;}
-.slides,
-.flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
-
-/* FlexSlider Necessary Styles
-*********************************/ 
-.flexslider {margin: 0; padding: 0; }
-.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {width: 100%; display: block;}
-.flex-pauseplay span {text-transform: capitalize;}
-
-/* Clearfix for the .slides element */
-.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .slides {display: block;} 
-* html .slides {height: 1%;}
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child {display: block;}
-
-
-/* FlexSlider Default Theme
-*********************************/
-.flexslider {margin: 0 0 60px; position: relative; zoom: 1;  }
-.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
-.loading .flex-viewport {max-height: 300px;}
-.flexslider .slides {zoom: 1;}
-
-.carousel li {margin-right: 5px}
-
-.flexslider img {
-    border: 0;
-    padding: 0;
-    box-shadow: 0 0 0 #fff;
+.flexslider {
+    @extend %mp0;
+    .slides, .flex-control-nav, .flex-direction-nav {
+        @extend %mp0; 
+        list-style: none; 
+    }
+    .slides {
+        @include clearfix();
+        > li {
+            @extend %hidden;
+            -webkit-backface-visibility: hidden; 
+        }
+        img {
+            width: 100%; 
+            display: block; 
+        }
+    }
 }
 
+.no-js .slides > li:first-child {
+    display: block; }
 
-/* Direction Nav */
-.flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(assets/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
-.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
-.flex-direction-nav .flex-prev {left: -36px;}
-.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
-.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
-.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
-
-/* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
-.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
-.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
-.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
-
-.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
-.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
-.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
-.flex-control-thumbs img:hover {opacity: 1;}
-.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
-
-@media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
-  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
-}
-
-.front .flex-control-nav {
-    display: none;
-}
-
-
-
-
-/* Block Menu ----------------------------------------------------- */
+/*  BLOCK MENU
+//////////////////////////////////////////////////////////////////////////////*/
 
 #block-menu-block-1 {
   overflow: hidden;
   margin-bottom: $margin;
   .block-title {
-      display: none;
+      @extend %hidden;
   }
 }
 
 .menu-block-1 ul {
-  margin: 0  !important;
-  padding: 0 !important;
+  @extend %mp0;
 }
 
 .menu-block-1 li {
@@ -336,86 +342,20 @@ html[xmlns] .slides {display: block;}
 }
 
 .holzarten a {
-  background: url(assets/blockmenu/1.jpg); }
-
+    background: url(assets/blockmenu/1.jpg); }
 .lackfarben a {
-  background: url(assets/blockmenu/2.jpg); }
-
+    background: url(assets/blockmenu/2.jpg); }
 .fronten a {
-  background: url(assets/blockmenu/3.jpg); }
-
+    background: url(assets/blockmenu/3.jpg); }
 .qualit-t-und-material a {
-    background: url(assets/blockmenu/5.jpg);
-   }
-
+    background: url(assets/blockmenu/5.jpg); }
 .beschl-ge a {
-  background: url(assets/blockmenu/4.jpg); }
-
+    background: url(assets/blockmenu/4.jpg); }
 .beleuchtung a {
-  background: url(assets/blockmenu/6.jpg); }
-
-/*  FRONT
-//////////////////////////////////////////////////////////////////////////////*/
-
-
-.front .col-right {
-    position: relative;
-    .flower {
-        position: absolute;
-        top: 10em;
-        right: -3em;
-        width: 15em;
-        z-index: 9999; 
-    }
-
-}
-
-.front {
-    .region-front-aside .field-name-body {
-        font-size: $font-size-m;
-    }
-}
-
-.front {
-    .field-name-field-col-left {
-        width: 100% !important;
-    }
-}
-
-
-
-
-/*  PAGE
-//////////////////////////////////////////////////////////////////////////////*/
-
-.page-node {
-    .content {
-        @include clearfix();
-    }
-    .field-label {
-        display: none;
-    }
-    .field-name-body {
-        margin-bottom: $margin;
-        font-size: $font-size-l;
-    }
-    .field-name-field-col-left {
-        float: left;
-        width: 50%;
-        padding-right: $padding-l;
-    }
-    .field-name-field-col-right {
-        float: right;
-        width: 50%;
-        padding-left: $padding-l;
-    }
-}
-
-
+    background: url(assets/blockmenu/6.jpg); }
 
 /*  PHOTOGRID
 //////////////////////////////////////////////////////////////////////////////*/
-
 
 .photogrid {
     @include clearfix();
@@ -481,7 +421,6 @@ html[xmlns] .slides {display: block;}
         }
         .spalte1 {
             @extend %margin;
-            
         }
         .spalte2 {
             @extend %margin;
@@ -493,14 +432,10 @@ html[xmlns] .slides {display: block;}
             @extend %margin;
         }
     }
-    .spalte1, .spalte2 {
-        
-    }
 }
 
 /*  TABS
 //////////////////////////////////////////////////////////////////////////////*/
-
 
 .node-einrichtungsbeispiel { 
     .tab-container {
@@ -528,67 +463,25 @@ html[xmlns] .slides {display: block;}
         }
     }
     .tab-pane {
-            border: 1px solid $dark-gray;
-            border-top: 0 solid;
-            padding: $padding-m;
+        border: 1px solid $dark-gray;
+        border-top: 0 solid;
+        padding: $padding-m;
+        float: left;
+        width: 100%;
+        @include clearfix();
+        .taxonomy-term {
             float: left;
-            width: 100%;
-            @include clearfix();
-            .taxonomy-term {
-                float: left;
-                margin-right: $padding-l;
-                h2 {
-                    font-size: $font-size-m;
-                    margin: 0;
-                }
-                .taxonomy-term-description {
-                    font-size: $font-size-m;
-                    margin: 0;
-                    display: none;
-                }
+            margin-right: $padding-l;
+            h2 {
+                font-size: $font-size-m;
+                margin: 0;
+            }
+            .taxonomy-term-description {
+                @extend %hidden;
             }
         }
+    }
 }
-
-
-/*  TAXONOMY
-//////////////////////////////////////////////////////////////////////////////*/
-
-/*
-
-.page-taxonomy {
-    .term-listing-heading {
-        @include clearfix();
-        .field-type-image {
-            float: left;
-            width: 33.3333%;
-        }
-        .taxonomy-term-description {
-            float:left;
-            width: 66.6666%;
-        }
-    }
-    .node-einrichtungsbeispiel {
-        sbackground: red;
-        float:left;
-        margin-right: $padding-l;
-        img {
-            margin: 0;   
-        }
-        .field-name-field-beispielnummer {
-            display: none;
-        }
-        .node-title {
-            font-size: $font-size-m;
-            margin: 0;
-            padding: $padding-m;
-        }
-        .links {
-            display: none;
-        }
-    }
-} */
-
 
 /*  NODE NAVIGATION
 //////////////////////////////////////////////////////////////////////////////*/
@@ -614,12 +507,6 @@ html[xmlns] .slides {display: block;}
         border: 1px solid $gray;
         margin-right: $spacing;
     }
-    .prev {
-
-    }
-    .next {
-
-    }
 }
 
 .node-navigation.bottom { 
@@ -644,7 +531,6 @@ html[xmlns] .slides {display: block;}
         margin: 0 0 5px 0;
     }
     .views-field-field-beispielnummer, .views-field-nid {
-        display: none;
+        @extend %hidden;
     }
 }
-

@@ -23,7 +23,6 @@
     .nav-main {
         @extend %col-100;
     }
-
 }
 
 .site-main {
@@ -36,9 +35,6 @@
         margin-top: 2em;
     }
 }
-
-
-
 
 .site-footer {
     .site-info {
@@ -67,10 +63,6 @@
     }
 }
 
-
-/*  PAGE-SPECIFIC LAYOUT
-//////////////////////////////////////////////////////////////////////////////*/
-
 .front {
     .site-content {
         @include clearfix();
@@ -84,9 +76,3 @@
         padding-left: $padding-l;
     }
 }
-
-
-.sub {
-    padding: $padding-l*2;
-}
-
