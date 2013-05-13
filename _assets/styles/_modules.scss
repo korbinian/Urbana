@@ -253,9 +253,6 @@
     .field-name-field-col-left {
         width: 100% !important;
     }
-    .flex-control-nav, .flex-direction-nav {
-        @extend %hidden;
-    }
 }
 
 /*  PAGE
@@ -304,6 +301,10 @@
             display: block; 
         }
     }
+}
+
+.flex-control-nav, .flex-direction-nav {
+    @extend %hidden;
 }
 
 .no-js .slides > li:first-child {
