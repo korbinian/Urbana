@@ -37,6 +37,10 @@ $border: 1px solid darken($gray, 10%);
 $text-color: $dark;
 $link-color: $blue;
 
+$mobile: 320; 
+$tablet: 760; 
+$desktop: 1120;
+
 @mixin mq($point, $IE9: false, $query1: min, $query2: width) {
     @if $IE9 == true{
         .lt-ie9 & {
