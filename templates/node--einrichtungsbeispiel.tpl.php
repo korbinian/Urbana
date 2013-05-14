@@ -32,7 +32,7 @@
         </ul> 
 
         <div class="einrichtungsbeispiel-main">
-            <div class="flexslider-hauptbild">
+            <div class="flexslider flexslider-hauptbild">
                 <ul class="slides">
                     <?php print render($content['field_hauptbild']); ?>
                 </ul>

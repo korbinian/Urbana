@@ -1,5 +1,8 @@
 <?php foreach ($items as $delta => $item): ?>
-  <li data-thumb="http://vu2160.s1.constructdoors.de/sites/default/files/AZ4_gr.jpg">
+<!--	<?php print_r ($item); ?> -->
+
+	<?= "base" . $base_path ?>
+  <li data-thumb="/sites/default/files/<?php print $item['#item']['filename']?>">
     <?php print render($item); ?>
   </li>
 <?php endforeach; ?>
