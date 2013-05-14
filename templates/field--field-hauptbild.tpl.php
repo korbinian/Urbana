@@ -3,6 +3,8 @@
 
 <!--	<?= "base" . $base_path ?> -->
   <li data-thumb="/sites/default/files/<?php print $item['#item']['filename']?>">
-    <?php print render($item); ?>
+    <a href="/sites/default/files/<?php print $item['#item']['filename']?>" class="colorbox">
+        <?php print render($item); ?>
+    </a>
   </li>
 <?php endforeach; ?>
