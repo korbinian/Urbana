@@ -34,7 +34,6 @@
 .ui-autocomplete { 
     position: absolute; 
     cursor: default;
-    sbackground: green;
 
      }   
 
@@ -126,7 +125,6 @@ form#search-block-form {
             margin: 0;
             padding: $padding-m;
             border: 0 solid;
-            sbackground: orange;
             @extend %btn-primary;
         }
     }
