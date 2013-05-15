@@ -64,14 +64,19 @@
         
         <div id="tab-container" class="tab-container">
                 <ul class='tabs'>
-                    <li class='tab'><a href="#tab-2">Material</a></li>
+                    <li class='tab'><a href="#tab-1">Materialien / Oberflächen</a></li>
+                    <li class='tab'><a href="#tab-2">Produkte</a></li>
                     <li class='tab'><a href="#tab-3">technische Besonderheiten</a></li>
                     <li class='tab'><a href="#tab-4">optionale Ausstattung</a></li>
                     <li class='tab'><a href="#tab-5">Planzeichnungen</a></li>
                 </ul>
-                <div id="tab-2" class="tab-pane">
-                    <h2>Material</h2>
+                <div id="tab-1" class="tab-pane">
+                    <h2>Materialien / Oberflächen</h2>
                     <?php print render($content['field_materialien']); ?>
+                </div>
+                <div id="tab-2" class="tab-pane">
+                    <h2>Produkte</h2>
+                    <?php print render($content['field_produkte']); ?>
                 </div>
                 <div id="tab-3" class="tab-pane">
                     <h2>technische Besonderheiten</h2>
