@@ -90,7 +90,10 @@
                 </div>
                 <div id="tab-5" class="tab-pane">
                     <h2>Planzeichnungen</h2>
-                    <a href="/content/edle-hölzer">Weitere Farben / Hölzer</a>
+                    <a href="/content/edle-hölzer">
+                        Weitere Farben / Hölzer 
+                        <img src="/sites/default/files/bilder/41.jpg">
+                    </a>
                 </div>
         </div> 
         
