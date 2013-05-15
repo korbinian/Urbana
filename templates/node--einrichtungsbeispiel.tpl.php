@@ -74,7 +74,10 @@
                     <h2>Materialien / Oberflächen</h2>
                     <p>Das Beispiel ist dargestellt in</p>
                     <?php print render($content['field_materialien']); ?>
-                    
+                    <a href="/content/edle-hölzer">
+                        Weitere Farben / Hölzer 
+                        <img src="/sites/default/files/bilder/41.jpg">
+                    </a>
                 </div>
                 <div id="tab-2" class="tab-pane">
                     <h2>Produkte</h2>
@@ -90,10 +93,6 @@
                 </div>
                 <div id="tab-5" class="tab-pane">
                     <h2>Planzeichnungen</h2>
-                    <a href="/content/edle-hölzer">
-                        Weitere Farben / Hölzer 
-                        <img src="/sites/default/files/bilder/41.jpg">
-                    </a>
                 </div>
         </div> 
         
