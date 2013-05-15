@@ -57,6 +57,9 @@
             <div class="stil">
                 <?php print render($content['field_stil']); ?>
             </div>
+            <div class="preis">
+                <?php print render($content['field_preisgruppe']); ?>
+            </div>
         </div>
         
         <div id="tab-container" class="tab-container">
