@@ -10,6 +10,11 @@
 @import "ie";
 
 
+* {
+    color: red;
+}
+
+
 .flex-control-nav {
     @include clearfix();
     li {

@@ -986,6 +986,9 @@ tr.even, tr.odd {
 .lt-ie9 .site-header {
   background: #eeeeee; }
 
+* {
+  color: red; }
+
 .flex-control-nav {
   *zoom: 1; }
   .flex-control-nav:before, .flex-control-nav:after {
