@@ -1063,6 +1063,11 @@ tr.even, tr.odd {
   float: left;
   margin: 0 1em 1em 0; }
 
+.more-wood {
+  background: red;
+  float: left;
+  border: 1px solid; }
+
 .flex-control-nav {
   *zoom: 1; }
   .flex-control-nav:before, .flex-control-nav:after {
