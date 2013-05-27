@@ -48,22 +48,25 @@
 .page-taxonomy-term {
     .node {
         sbackground: red;
+        position: relative;
         float: left;
         width: 25%;
         padding-right: 1em;
-        height: 100px;
+        height: 10em;
         li {
             list-style: none;
             
         }
         img {
-            sposition: absolute;
-            max-height: 100px;
+            position: absolute;
+            height: 8em !important;
             width: auto;
             margin: 0;
         }
         h1 {
             font-size: 1em;
+            position: absolute;
+            bottom: 0;
         }
     }
 }
