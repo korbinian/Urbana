@@ -45,6 +45,18 @@
 
 // taxonomy
 
+.page-taxonomy-term {
+    .node {
+        background: red;
+        float: left;
+        width: 25%;
+        li {
+            list-style: none;
+            
+        }
+    }
+}
+
 .taxonomy-term {
     .content {
         @include clearfix();

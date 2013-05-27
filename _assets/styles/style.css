@@ -1029,6 +1029,13 @@ tr.even, tr.odd {
       right: 2px;
       background: transparent; }
 
+.page-taxonomy-term .node {
+  background: red;
+  float: left;
+  width: 25%; }
+  .page-taxonomy-term .node li {
+    list-style: none; }
+
 .taxonomy-term .content {
   *zoom: 1; }
   .taxonomy-term .content:before, .taxonomy-term .content:after {
