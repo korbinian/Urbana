@@ -1018,7 +1018,8 @@ tr.even, tr.odd {
       border: 0.125em solid #453e3f;
       border-bottom: 0 solid;
       padding: 0 0.5em;
-      padding-top: .125em; }
+      padding-top: .125em;
+      padding-right: 25px; }
     .region-navigation #block-search-form #search-block-form .form-submit {
       margin: 0;
       padding: 0;
