@@ -1029,6 +1029,21 @@ tr.even, tr.odd {
       right: 2px;
       background: transparent; }
 
+.taxonomy-term .content {
+  *zoom: 1; }
+  .taxonomy-term .content:before, .taxonomy-term .content:after {
+    content: " ";
+    display: table; }
+  .taxonomy-term .content:after {
+    clear: both; }
+
+.taxonomy-term-description {
+  margin: 0; }
+
+.field-name-field-symbolbild {
+  float: left;
+  margin: 0 1em 1em 0; }
+
 .flex-control-nav {
   *zoom: 1; }
   .flex-control-nav:before, .flex-control-nav:after {

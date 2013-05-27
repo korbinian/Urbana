@@ -3,11 +3,9 @@
         
         <?php if ($view_mode == 'teaser'): ?>
 
-        <div class="flexslider">
-            <ul class="slides">
-                <li><?php print render($content['field_hauptbild']); ?></li>
-            </ul>
-        </div>
+
+        
+        <?php print render($content['field_hauptbild']); ?>
 
         <?php print render($content['field_beispielnummer']); ?>
         
@@ -19,7 +17,6 @@
         <?php endif; ?>
         <?php print render($title_suffix); ?>
 
-        <?php print render($content); ?>
 
         <?php endif; ?>
     
