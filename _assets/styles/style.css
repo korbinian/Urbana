@@ -1052,6 +1052,8 @@ tr.even, tr.odd {
     height: 8em !important;
     width: auto;
     margin: 0; }
+    .page-taxonomy-term .node img:first-of-type {
+      z-index: 99; }
   .page-taxonomy-term .node h1 {
     font-size: 1em;
     position: absolute;

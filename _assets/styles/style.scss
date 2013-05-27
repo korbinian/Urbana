@@ -75,6 +75,9 @@
             height: 8em !important;
             width: auto;
             margin: 0;
+            &:first-of-type {
+                z-index: 99;
+            }
         }
         h1 {
             font-size: 1em;
