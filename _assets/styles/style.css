@@ -280,7 +280,7 @@ input:invalid, textarea:invalid {
   .site-footer .urbana span {
     color: #eeeeee; }
 
-.site-nav .search #search-block-form, .page-node .field-label, .flexslider .slides > li, .front .flex-control-nav, .front .flex-direction-nav, #block-menu-block-1 .block-title, .node-einrichtungsbeispiel .tab-pane .taxonomy-term .taxonomy-term-description, .draggableviews-processed li.views-row .views-field-field-beispielnummer, .draggableviews-processed li.views-row .views-field-nid, .site-header .block-title, .site-footer .block-title {
+.page-node .field-label, .flexslider .slides > li, .front .flex-control-nav, .front .flex-direction-nav, #block-menu-block-1 .block-title, .node-einrichtungsbeispiel .tab-pane .taxonomy-term .taxonomy-term-description, .draggableviews-processed li.views-row .views-field-field-beispielnummer, .draggableviews-processed li.views-row .views-field-nid, .site-header .block-title, .site-footer .block-title {
   display: none; }
 
 figure, article img, article iframe, p, ul, ol, dl, table, form, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .spalte1, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .spalte2, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .wohnbereich, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .stil, .action-links, .collapsible {
@@ -310,7 +310,7 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
     -o-transition: all 0.15s ease-out 0;
     transition: all 0.15s ease-out 0; }
 
-.site-header .call-to-action .cta-button, form#search-block-form .form-actions #edit-submit {
+.site-header .call-to-action .cta-button {
   background: #e74136;
   color: #fdedec;
   border-radius: 2px;
@@ -323,7 +323,7 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
   -ms-transition: all 0.15s ease-out 0;
   -o-transition: all 0.15s ease-out 0;
   transition: all 0.15s ease-out 0; }
-  .site-header .call-to-action .cta-button:hover, form#search-block-form .form-actions #edit-submit:hover {
+  .site-header .call-to-action .cta-button:hover {
     background: #d12419;
     -webkit-transition: all 0.15s ease-out 0;
     -moz-transition: all 0.15s ease-out 0;
@@ -406,42 +406,55 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
       font-family: FontAwesome;
       content: "\f095"; }
 
-.site-nav .row {
-  padding-left: 2.5em; }
-.site-nav .nav-main {
-  padding: 0 0; }
-  .site-nav .nav-main #main-menu {
-    *zoom: 1; }
-    .site-nav .nav-main #main-menu:before, .site-nav .nav-main #main-menu:after {
-      content: " ";
-      display: table; }
-    .site-nav .nav-main #main-menu:after {
-      clear: both; }
-    .site-nav .nav-main #main-menu li {
-      float: left; }
-      .site-nav .nav-main #main-menu li a {
-        display: block;
-        padding: 0.25em 0.5em 0 0.5em;
-        text-decoration: none;
-        margin: 0 0 0 0; }
-.site-nav .search {
-  padding: 0 1em 0 1em; }
-  .site-nav .search #search-block-form {
-    position: relative; }
-    .site-nav .search #search-block-form input {
-      border: 0 solid;
-      padding: 0.25em 0.5em; }
-    .site-nav .search #search-block-form input[type="text"] {
-      width: 100%;
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4) inset;
-      border-radius: 2px; }
-    .site-nav .search #search-block-form input[type="submit"] {
-      background: transparent;
-      position: absolute;
-      top: 0;
-      right: 0; }
-    .site-nav .search #search-block-form .form-item, .site-nav .search #search-block-form .form-actions {
-      margin: 0; }
+.site-nav {
+  /*
+  .search {
+      padding: 0 $padding-l 0 $padding-l;
+      #search-block-form {
+          @extend %hidden;
+          position: relative;
+          input {
+              border: 0 solid;
+              padding: .25em .5em;
+          }
+          input[type="text"] {
+              width: 100%;
+              box-shadow: 1px 1px 1px rgba(0,0,0,.4) inset;
+              border-radius: $radius;
+          }
+          input[type="submit"] {
+              background: transparent;
+              position: absolute;
+              top: 0;
+              right: 0;
+          }
+          .form-item, .form-actions {
+              margin: 0;
+          }
+      }
+  }*/ }
+  .site-nav .row {
+    padding-left: 2.5em;
+    margin-top: -1.7em; }
+  .site-nav .nav-main {
+    padding: 0 0; }
+    .site-nav .nav-main #main-menu {
+      *zoom: 1;
+      float: left;
+      sbackground: red;
+      width: 85%; }
+      .site-nav .nav-main #main-menu:before, .site-nav .nav-main #main-menu:after {
+        content: " ";
+        display: table; }
+      .site-nav .nav-main #main-menu:after {
+        clear: both; }
+      .site-nav .nav-main #main-menu li {
+        float: left; }
+        .site-nav .nav-main #main-menu li a {
+          display: block;
+          padding: 0.25em 0.5em 0 0.5em;
+          text-decoration: none;
+          margin: 0 0 0 0; }
 
 .site-main .site-content {
   padding: 2em; }
@@ -746,19 +759,18 @@ body {
 .site-nav {
   color: silver;
   border-bottom: 2px solid black; }
-  .site-nav .nav-main {
-    background: #453e3f;
-    margin-top: -1.7em;
-    padding: 2px 2px 0 2px;
-    border-top-right-radius: 2px;
+  .site-nav .nav-main .first a {
     border-top-left-radius: 2px; }
-    .site-nav .nav-main a {
-      position: relative;
-      border-radius: 2px;
-      color: #eeeeee;
-      font-weight: bold; }
-      .site-nav .nav-main a:hover {
-        background: #e74136; }
+  .site-nav .nav-main .last a {
+    border-top-right-radius: 2px; }
+  .site-nav .nav-main a {
+    position: relative;
+    background: #453e3f;
+    sborder-radius: 2px;
+    color: #eeeeee;
+    font-weight: bold; }
+    .site-nav .nav-main a:hover {
+      background: #e74136; }
 
 .site-main {
   background: #fff; }
@@ -992,6 +1004,30 @@ tr.even, tr.odd {
 .lt-ie9 .site-header {
   background: #eeeeee; }
 
+.region-navigation {
+  float: right;
+  background: blue;
+  width: 15%; }
+  .region-navigation #block-search-form #search-block-form {
+    margin-bottom: 0;
+    position: relative; }
+    .region-navigation #block-search-form #search-block-form .form-item, .region-navigation #block-search-form #search-block-form .form-actions {
+      margin: 0; }
+    .region-navigation #block-search-form #search-block-form .form-text {
+      width: 100%;
+      border: 0.125em solid #453e3f;
+      border-bottom: 0 solid;
+      padding: 0 0.5em;
+      padding-top: .125em; }
+    .region-navigation #block-search-form #search-block-form .form-submit {
+      margin: 0;
+      padding: 0;
+      border: 0 solid;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      background: transparent; }
+
 .flex-control-nav {
   *zoom: 1; }
   .flex-control-nav:before, .flex-control-nav:after {
@@ -1099,39 +1135,52 @@ tr.even, tr.odd {
   background-color: #0A246A;
   color: white; }
 
+/*
+
 form#search-block-form {
-  position: relative;
-  padding: 1em;
-  width: 100%;
-  margin: 0 0 1.35em 0; }
-  form#search-block-form .form-item {
-    margin: 0;
-    padding: 0; }
-  form#search-block-form .form-actions {
-    float: none;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 1em;
-    right: 1em; }
-    form#search-block-form .form-actions #edit-submit {
-      margin: 0;
-      padding: 0.5em;
-      border: 0 solid; }
-  form#search-block-form input#edit-search-block-form--2 {
-    margin: 0;
-    padding: 0.5em;
-    border: 0 solid;
-    background: white;
-    width: 100%; }
+    position: relative;
+    padding: $padding-l;
+    width: 100%;
+    margin: 0 0 $margin 0;
+    .form-item {
+        margin: 0;
+        padding: 0;
+    }
+    .form-actions {
+        float: none;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: $padding-l;
+        right: $padding-l;
+        #edit-submit {
+
+            margin: 0;
+            padding: $padding-m;
+            border: 0 solid;
+            @extend %btn-primary;
+        }
+    }
+    input#edit-search-block-form--2 {
+        margin: 0;
+        padding: $padding-m;
+        border: 0 solid;
+        background: $white;
+        width: 100%;
+    }
+}
+
 
 .ui-autocomplete-input {
   background-image: none;
   background-position: 0 0;
-  background-repeat: no-repeat; }
-
+  background-repeat: no-repeat;
+}
 .ui-autocomplete-loading {
   background-image: none;
   background-position: 0 0;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
+
+*/

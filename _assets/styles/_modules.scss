@@ -84,11 +84,15 @@
 .site-nav {
     .row {
         padding-left: 2em + $padding-m;
+        margin-top: -1.7em;
     }
     .nav-main {
         padding: 0 0;
         #main-menu {
             @include clearfix();
+            float: left;
+            sbackground: red;
+            width: 85%;
             li {
                 float: left;
                 a {
@@ -100,6 +104,9 @@
             }
         }
     }
+
+
+    /*
     .search {
         padding: 0 $padding-l 0 $padding-l;
         #search-block-form {
@@ -124,7 +131,7 @@
                 margin: 0;
             }
         }
-    }
+    }*/
 }
 
 /*  MAIN

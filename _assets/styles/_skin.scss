@@ -9,14 +9,17 @@ body {
     color: silver;
     border-bottom: 2px solid #000;
     .nav-main {
-        background: $dark;
-        margin-top: -1.7em;
-        padding: 2px 2px 0 2px;
-        border-top-right-radius: $radius;
-        border-top-left-radius: $radius;
+
+        .first a {
+                border-top-left-radius: $radius;
+            }
+        .last a {
+            border-top-right-radius: $radius;
+        }
         a {
             position: relative;
-            border-radius: $radius;
+            background: $dark;
+            sborder-radius: $radius;
             color: $gray;
             font-weight: bold;
             &:hover {

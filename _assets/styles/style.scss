@@ -9,6 +9,41 @@
 @import "drupal";
 @import "ie";
 
+.region-navigation {
+    float: right;
+    background: blue;
+    width: 15%;
+    #block-search-form {
+        #search-block-form {
+            margin-bottom: 0;
+            position: relative;
+            .form-item, .form-actions {
+                margin: 0;
+            }
+            .form-text {
+                width: 100%;
+                border: .125em solid $dark;
+                border-bottom: 0 solid;
+                padding: 0 .5em;
+                padding-top: .125em;
+            }
+            .form-submit {
+                margin: 0;
+                padding: 0;
+                border: 0 solid;
+                position: absolute;
+                top: 2px;
+                right: 2px;
+                background: transparent;
+            }
+
+        }
+    }
+}
+
+
+
+
 
 // cta
 
@@ -106,6 +141,8 @@
 
 // search
 
+/*
+
 form#search-block-form {
     position: relative;
     padding: $padding-l;
@@ -152,5 +189,6 @@ form#search-block-form {
   background-repeat: no-repeat;
 }
 
+*/
 
 
