@@ -37,7 +37,7 @@
     }
     .call-to-action {
         padding: $padding-l;
-        background:  url(assets/ricky.png) no-repeat bottom right;
+        background: url(assets/ricky.png) no-repeat bottom right;
         height: 10em;
         position: relative;
         .block-title {
@@ -50,6 +50,9 @@
         .cta-button {
             @extend %btn-primary;
             margin-bottom: 2px;
+            width: 60%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             &:before {
                 font-family: $icons;
                 content: "\f02d";
@@ -61,6 +64,9 @@
             background: rgba(255,255,255,.4);
             float: left;
             margin-top: -2px;
+            width: 60%;
+            border-bottom-left-radius: $radius;
+            border-bottom-right-radius: $radius;
             b {
                 @include hide-text();
             }
