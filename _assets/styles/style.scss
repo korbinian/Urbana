@@ -47,12 +47,23 @@
 
 .page-taxonomy-term {
     .node {
-        background: red;
+        sbackground: red;
         float: left;
         width: 25%;
+        padding-right: 1em;
+        height: 100px;
         li {
             list-style: none;
             
+        }
+        img {
+            sposition: absolute;
+            max-height: 100px;
+            width: auto;
+            margin: 0;
+        }
+        h1 {
+            font-size: 1em;
         }
     }
 }

@@ -1030,11 +1030,20 @@ tr.even, tr.odd {
       background: transparent; }
 
 .page-taxonomy-term .node {
-  background: red;
+  sbackground: red;
   float: left;
-  width: 25%; }
+  width: 25%;
+  padding-right: 1em;
+  height: 100px; }
   .page-taxonomy-term .node li {
     list-style: none; }
+  .page-taxonomy-term .node img {
+    sposition: absolute;
+    max-height: 100px;
+    width: auto;
+    margin: 0; }
+  .page-taxonomy-term .node h1 {
+    font-size: 1em; }
 
 .taxonomy-term .content {
   *zoom: 1; }
