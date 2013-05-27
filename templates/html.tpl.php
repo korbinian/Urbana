@@ -26,6 +26,7 @@
                     controlNav: "thumbnails" 
                 });
                 jQuery('#tab-container').easytabs();
+                jQuery('#tab-container2').easytabs();
             });
         </script>
 

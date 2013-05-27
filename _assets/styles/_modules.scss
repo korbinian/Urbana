@@ -457,10 +457,11 @@
 /*  TABS
 //////////////////////////////////////////////////////////////////////////////*/
 
-.node-einrichtungsbeispiel { 
+.node-einrichtungsbeispiel, .page-node-11 .content { 
     .tab-container {
         float: left;
         width: 100%;
+        margin-bottom: $margin;
     }
     .tabs {
         border-top: 0 solid;

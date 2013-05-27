@@ -280,7 +280,7 @@ input:invalid, textarea:invalid {
   .site-footer .urbana span {
     color: #eeeeee; }
 
-.page-node .field-label, .flexslider .slides > li, .front .flex-control-nav, .front .flex-direction-nav, #block-menu-block-1 .block-title, .node-einrichtungsbeispiel .tab-pane .taxonomy-term .taxonomy-term-description, .draggableviews-processed li.views-row .views-field-field-beispielnummer, .draggableviews-processed li.views-row .views-field-nid, .site-header .block-title, .site-footer .block-title {
+.page-node .field-label, .flexslider .slides > li, .front .flex-control-nav, .front .flex-direction-nav, #block-menu-block-1 .block-title, .node-einrichtungsbeispiel .tab-pane .taxonomy-term .taxonomy-term-description, .page-node-11 .content .tab-pane .taxonomy-term .taxonomy-term-description, .draggableviews-processed li.views-row .views-field-field-beispielnummer, .draggableviews-processed li.views-row .views-field-nid, .site-header .block-title, .site-footer .block-title {
   display: none; }
 
 figure, article img, article iframe, p, ul, ol, dl, table, form, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .spalte1, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .spalte2, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .wohnbereich, .node-einrichtungsbeispiel .einrichtungsbeispiel-details .stil, .action-links, .collapsible {
@@ -664,41 +664,42 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
   .node-einrichtungsbeispiel .einrichtungsbeispiel-details .field-label {
     display: block !important; }
 
-.node-einrichtungsbeispiel .tab-container {
+.node-einrichtungsbeispiel .tab-container, .page-node-11 .content .tab-container {
   float: left;
-  width: 100%; }
-.node-einrichtungsbeispiel .tabs {
+  width: 100%;
+  margin-bottom: 1.35em; }
+.node-einrichtungsbeispiel .tabs, .page-node-11 .content .tabs {
   border-top: 0 solid;
   border-bottom: 1px solid #d4d4d4;
   margin: 0;
   padding-left: 0; }
-  .node-einrichtungsbeispiel .tabs .tab {
+  .node-einrichtungsbeispiel .tabs .tab, .page-node-11 .content .tabs .tab {
     float: left;
     margin-left: 0;
     margin-right: 2px; }
-  .node-einrichtungsbeispiel .tabs .tab a {
+  .node-einrichtungsbeispiel .tabs .tab a, .page-node-11 .content .tabs .tab a {
     margin-top: 0;
     margin-bottom: -1px;
     border: 1px solid #d4d4d4;
     border-bottom: 0 solid; }
-    .node-einrichtungsbeispiel .tabs .tab a.active {
+    .node-einrichtungsbeispiel .tabs .tab a.active, .page-node-11 .content .tabs .tab a.active {
       background: #fff; }
-.node-einrichtungsbeispiel .tab-pane {
+.node-einrichtungsbeispiel .tab-pane, .page-node-11 .content .tab-pane {
   border: 1px solid #d4d4d4;
   border-top: 0 solid;
   padding: 0.5em;
   float: left;
   width: 100%;
   *zoom: 1; }
-  .node-einrichtungsbeispiel .tab-pane:before, .node-einrichtungsbeispiel .tab-pane:after {
+  .node-einrichtungsbeispiel .tab-pane:before, .node-einrichtungsbeispiel .tab-pane:after, .page-node-11 .content .tab-pane:before, .page-node-11 .content .tab-pane:after {
     content: " ";
     display: table; }
-  .node-einrichtungsbeispiel .tab-pane:after {
+  .node-einrichtungsbeispiel .tab-pane:after, .page-node-11 .content .tab-pane:after {
     clear: both; }
-  .node-einrichtungsbeispiel .tab-pane .taxonomy-term {
+  .node-einrichtungsbeispiel .tab-pane .taxonomy-term, .page-node-11 .content .tab-pane .taxonomy-term {
     float: left;
     margin-right: 1em; }
-    .node-einrichtungsbeispiel .tab-pane .taxonomy-term h2 {
+    .node-einrichtungsbeispiel .tab-pane .taxonomy-term h2, .page-node-11 .content .tab-pane .taxonomy-term h2 {
       font-size: 1em;
       margin: 0; }
 
