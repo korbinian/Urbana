@@ -9,6 +9,19 @@
 @import "drupal";
 @import "ie";
 
+//tabs
+
+.tab-pane {
+    .taxonomy-term {
+        width: 20%;
+        margin-right: 0 !important;
+        padding-right: 1em;
+        height: 12em;
+        margin-bottom: 1em;
+        overflow: hidden;
+    }
+}
+
 .region-navigation {
     float: right;
     background: blue;
@@ -87,9 +100,7 @@ margin: 0;
 }
 
 .more-wood {
-    background: red;
     float:left;
-    border: 1px solid;
 }
 
 

@@ -1004,6 +1004,14 @@ tr.even, tr.odd {
 .lt-ie9 .site-header {
   background: #eeeeee; }
 
+.tab-pane .taxonomy-term {
+  width: 20%;
+  margin-right: 0 !important;
+  padding-right: 1em;
+  height: 12em;
+  margin-bottom: 1em;
+  overflow: hidden; }
+
 .region-navigation {
   float: right;
   background: blue;
@@ -1064,9 +1072,7 @@ tr.even, tr.odd {
   margin: 0 1em 1em 0; }
 
 .more-wood {
-  background: red;
-  float: left;
-  border: 1px solid; }
+  float: left; }
 
 .flex-control-nav {
   *zoom: 1; }

@@ -90,6 +90,7 @@
                 </div>
                 <div id="tab-5" class="tab-pane">
                     <h2>Planzeichnungen</h2>
+                    <?php print render($content['field_planzeichnung']); ?>
                 </div>
         </div> 
         
