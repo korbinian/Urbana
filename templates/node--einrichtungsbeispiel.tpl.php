@@ -5,7 +5,7 @@
 
 
         
-        <?php print render($content['field_hauptbild']); ?>
+        <?php print render($content['field_hauptbild'][0]); ?>
 
         <?php print render($content['field_beispielnummer']); ?>
         

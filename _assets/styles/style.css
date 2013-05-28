@@ -6,6 +6,13 @@
   src: url("../../_assets/fonts/questrial/Questrial-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../_assets/fonts/questrial/Questrial-Regular-webfont.woff") format("woff"), url("../../_assets/fonts/questrial/Questrial-Regular-webfont.ttf") format("truetype"), url("../../_assets/fonts/questrial/Questrial-Regular-webfont.svg#Questrial") format("svg"); }
 
 @font-face {
+  font-family: Karla;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.eot");
+  src: url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.woff") format("woff"), url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.ttf") format("truetype"), url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.svg#Karla") format("svg"); }
+
+@font-face {
   font-family: Fontawesome;
   font-weight: normal;
   font-style: normal;
@@ -24,7 +31,7 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body, input, select, button {
-  font-family: Questrial, "Century Gothic", Arial, helvetica, sans-serif;
+  font-family: Karla, Questrial, "Century Gothic", Arial, helvetica, sans-serif;
   line-height: 1.35;
   font-size: 12px;
   color: #453e3f; }
@@ -81,7 +88,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
-  font-family: Questrial, "Century Gothic", Arial, helvetica, sans-serif;
+  font-family: Karla, Questrial, "Century Gothic", Arial, helvetica, sans-serif;
   font-weight: normal;
   margin: 0; }
 
@@ -270,7 +277,7 @@ input:invalid, textarea:invalid {
 
 .urbana {
   font-weight: bold;
-  font-family: Questrial, "Century Gothic", Arial, helvetica, sans-serif;
+  font-family: Karla, Questrial, "Century Gothic", Arial, helvetica, sans-serif;
   color: #145497; }
   .urbana span {
     color: #e74136; }
@@ -965,7 +972,7 @@ tr.even, tr.odd {
 .page-node-edit .site-content {
   width: 100%; }
   .page-node-edit .site-content textarea {
-    font-family: Questrial, "Century Gothic", Arial, helvetica, sans-serif;
+    font-family: Karla, Questrial, "Century Gothic", Arial, helvetica, sans-serif;
     padding: 1em; }
 .page-node-edit .sidebar {
   display: none; }
