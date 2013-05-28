@@ -347,19 +347,19 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
   float: left; }
 
 .site-header .branding {
-  width: 75%;
+  width: 70%;
   float: left; }
 
 .front .col-left, .front .col-right {
   width: 50%;
   float: left; }
 
-.site-footer .footer-first, .site-footer .footer-second, .site-footer .footer-third {
-  width: 28.3333333333%;
+.site-header .call-to-action {
+  width: 30%;
   float: left; }
 
-.site-header .call-to-action {
-  width: 25%;
+.site-footer .footer-first, .site-footer .footer-second, .site-footer .footer-third {
+  width: 28.3333333333%;
   float: left; }
 
 .site-main .sidebar {
