@@ -488,6 +488,11 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
     list-style: none;
     padding: 0;
     margin: 0 0 1.35em 0; }
+    .site-main .sidebar ul a.active-trail {
+      background: #145497;
+      color: white; }
+      .site-main .sidebar ul a.active-trail:hover {
+        color: #000; }
     .site-main .sidebar ul li a {
       display: block;
       text-decoration: none;

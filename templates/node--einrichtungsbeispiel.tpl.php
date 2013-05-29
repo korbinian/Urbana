@@ -71,7 +71,7 @@
                     <h2>Materialien / Oberflächen</h2>
                     <p>Das Beispiel ist dargestellt in</p>
                     <?php print render($content['field_materialien']); ?>
-                    <a href="/content/edle-hölzer" class="more-wood">
+                    <a href="/content/farben_und_hoelzer" class="more-wood">
                         <div>Weitere Farben / Hölzer </div>
                         <img src="/sites/default/files/bilder/41.jpg">
                     </a>
