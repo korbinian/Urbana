@@ -23,13 +23,13 @@
 
 .site-header {
     .branding {
-        padding: $padding-l*2;
+        padding: $padding-l*2 0;
         position: relative;
         height: 10em;
         .site-logo {
             position: absolute;
             bottom: $padding-l*3;
-            max-width: 30em;
+            max-width: 45em;
         }
         .site-title-and-tagline h1 {
             text-indent: -999em;
@@ -83,11 +83,12 @@
 
 .site-nav {
     .row {
-        padding-left: 2em + $padding-m;
+        spadding-left: 2em + $padding-m;
         margin-top: -1.7em;
     }
     .nav-main {
         padding: 0 0;
+        smargin-left: 2em;
         #main-menu {
             @include clearfix();
             float: left;
@@ -104,34 +105,6 @@
             }
         }
     }
-
-
-    /*
-    .search {
-        padding: 0 $padding-l 0 $padding-l;
-        #search-block-form {
-            @extend %hidden;
-            position: relative;
-            input {
-                border: 0 solid;
-                padding: .25em .5em;
-            }
-            input[type="text"] {
-                width: 100%;
-                box-shadow: 1px 1px 1px rgba(0,0,0,.4) inset;
-                border-radius: $radius;
-            }
-            input[type="submit"] {
-                background: transparent;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-            .form-item, .form-actions {
-                margin: 0;
-            }
-        }
-    }*/
 }
 
 /*  MAIN
@@ -139,7 +112,7 @@
 
 .site-main {
     .site-content {
-        padding: $padding-l*2;
+        padding: $padding-l*2 $padding-l*2 $padding-l*2 0 ;
         .breadcrumb {
             margin: 0 0 $margin 0;
             ol {
@@ -208,16 +181,16 @@
         }
     }
     .site-info {
-        padding: $padding-l $padding-l*2;
+        padding: $padding-l 0;
     }
     .footer-first {
-        padding: $padding-l $padding-l*2;
+        padding: $padding-l 0;
     }
     .footer-second {
-        padding: $padding-l $padding-l*2;
+        padding: $padding-l 0;
     }
     .footer-third {
-        padding: $padding-l $padding-l*2;
+        padding: $padding-l 0;
     }
 }
 

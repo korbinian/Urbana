@@ -12,10 +12,10 @@
 
 .site-header {
     .branding {
-        @extend %col-70;
+        @extend %col-75;
     }
     .call-to-action {
-        @extend %col-30;
+        @extend %col-25;
     }
 }
 

@@ -25,6 +25,8 @@
         
         <ul class="node-navigation top">
             <li class="next"><?php print pn_node($node, 'n'); ?></li>
+	    <li class="back"><a href="javascript:history.back()">zur&uuml;ck</a></li>
+
             <li class="prev"><?php print pn_node($node, 'p'); ?></li>
         </ul> 
 
@@ -71,7 +73,7 @@
                     <h2>Materialien / Oberflächen</h2>
                     <p>Das Beispiel ist dargestellt in</p>
                     <?php print render($content['field_materialien']); ?>
-                    <a href="/content/farben_und_hoelzer" class="more-wood">
+                    <a href="/content/edle-hölzer" class="more-wood">
                         <div>Weitere Farben / Hölzer </div>
                         <img src="/sites/default/files/bilder/41.jpg">
                     </a>
@@ -96,6 +98,7 @@
         
         <ul class="node-navigation bottom">
             <li class="next"><?php print pn_node($node, 'n'); ?></li>
+	    <li class="back"><a href="javascript:history.back()">zur&uuml;ck</a></li>
             <li class="prev"><?php print pn_node($node, 'p'); ?></li>
         </ul>
             
