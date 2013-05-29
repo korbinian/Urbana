@@ -1,18 +1,4 @@
 @font-face {
-  font-family: Questrial;
-  font-weight: normal;
-  font-style: normal;
-  src: url("../../_assets/fonts/questrial/Questrial-Regular-webfont.eot");
-  src: url("../../_assets/fonts/questrial/Questrial-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../_assets/fonts/questrial/Questrial-Regular-webfont.woff") format("woff"), url("../../_assets/fonts/questrial/Questrial-Regular-webfont.ttf") format("truetype"), url("../../_assets/fonts/questrial/Questrial-Regular-webfont.svg#Questrial") format("svg"); }
-
-@font-face {
-  font-family: Karla;
-  font-weight: normal;
-  font-style: normal;
-  src: url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.eot");
-  src: url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.woff") format("woff"), url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.ttf") format("truetype"), url("../../_assets/fonts/karla-fontfacekit/Karla-Regular-webfont.svg#Karla") format("svg"); }
-
-@font-face {
   font-family: Fontawesome;
   font-weight: normal;
   font-style: normal;
@@ -347,19 +333,19 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
   float: left; }
 
 .site-header .branding {
-  width: 70%;
+  width: 75%;
   float: left; }
 
 .front .col-left, .front .col-right {
   width: 50%;
   float: left; }
 
-.site-header .call-to-action {
-  width: 30%;
-  float: left; }
-
 .site-footer .footer-first, .site-footer .footer-second, .site-footer .footer-third {
   width: 28.3333333333%;
+  float: left; }
+
+.site-header .call-to-action {
+  width: 25%;
   float: left; }
 
 .site-main .sidebar {
@@ -367,13 +353,13 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
   float: left; }
 
 .site-header .branding {
-  padding: 2em;
+  padding: 2em 0;
   position: relative;
   height: 10em; }
   .site-header .branding .site-logo {
     position: absolute;
     bottom: 3em;
-    max-width: 30em; }
+    max-width: 45em; }
   .site-header .branding .site-title-and-tagline h1 {
     text-indent: -999em; }
 .site-header .call-to-action {
@@ -413,58 +399,32 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
       font-family: FontAwesome;
       content: "\f095"; }
 
-.site-nav {
-  /*
-  .search {
-      padding: 0 $padding-l 0 $padding-l;
-      #search-block-form {
-          @extend %hidden;
-          position: relative;
-          input {
-              border: 0 solid;
-              padding: .25em .5em;
-          }
-          input[type="text"] {
-              width: 100%;
-              box-shadow: 1px 1px 1px rgba(0,0,0,.4) inset;
-              border-radius: $radius;
-          }
-          input[type="submit"] {
-              background: transparent;
-              position: absolute;
-              top: 0;
-              right: 0;
-          }
-          .form-item, .form-actions {
-              margin: 0;
-          }
-      }
-  }*/ }
-  .site-nav .row {
-    padding-left: 2.5em;
-    margin-top: -1.7em; }
-  .site-nav .nav-main {
-    padding: 0 0; }
-    .site-nav .nav-main #main-menu {
-      *zoom: 1;
-      float: left;
-      sbackground: red;
-      width: 85%; }
-      .site-nav .nav-main #main-menu:before, .site-nav .nav-main #main-menu:after {
-        content: " ";
-        display: table; }
-      .site-nav .nav-main #main-menu:after {
-        clear: both; }
-      .site-nav .nav-main #main-menu li {
-        float: left; }
-        .site-nav .nav-main #main-menu li a {
-          display: block;
-          padding: 0.25em 0.5em 0 0.5em;
-          text-decoration: none;
-          margin: 0 0 0 0; }
+.site-nav .row {
+  spadding-left: 2.5em;
+  margin-top: -1.7em; }
+.site-nav .nav-main {
+  padding: 0 0;
+  smargin-left: 2em; }
+  .site-nav .nav-main #main-menu {
+    *zoom: 1;
+    float: left;
+    sbackground: red;
+    width: 85%; }
+    .site-nav .nav-main #main-menu:before, .site-nav .nav-main #main-menu:after {
+      content: " ";
+      display: table; }
+    .site-nav .nav-main #main-menu:after {
+      clear: both; }
+    .site-nav .nav-main #main-menu li {
+      float: left; }
+      .site-nav .nav-main #main-menu li a {
+        display: block;
+        padding: 0.25em 0.5em 0 0.5em;
+        text-decoration: none;
+        margin: 0 0 0 0; }
 
 .site-main .site-content {
-  padding: 2em; }
+  padding: 2em 2em 2em 0; }
   .site-main .site-content .breadcrumb {
     margin: 0 0 1.35em 0; }
     .site-main .site-content .breadcrumb ol {
@@ -517,13 +477,13 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
   .site-footer table tbody {
     border-top: 0; }
   .site-footer .site-info {
-    padding: 1em 2em; }
+    padding: 1em 0; }
   .site-footer .footer-first {
-    padding: 1em 2em; }
+    padding: 1em 0; }
   .site-footer .footer-second {
-    padding: 1em 2em; }
+    padding: 1em 0; }
   .site-footer .footer-third {
-    padding: 1em 2em; }
+    padding: 1em 0; }
 
 .site-footer .tel:before {
   font-family: FontAwesome;
@@ -1008,7 +968,7 @@ tr.even, tr.odd {
   margin: -1px 0 -1px -25em; }
 
 .sub {
-  padding: 2em; }
+  padding: 2em 0; }
 
 .lt-ie9 body, .lt-ie9 input, .lt-ie9 select, .lt-ie9 button {
   font-size: 1em; }
@@ -1019,9 +979,9 @@ tr.even, tr.odd {
 
 .tab-pane .taxonomy-term {
   width: 20%;
+  width: auto;
   margin-right: 0 !important;
   padding-right: 1em;
-  height: 12em;
   margin-bottom: 1em;
   overflow: hidden; }
 
@@ -1195,53 +1155,3 @@ tr.even, tr.odd {
   background-image: none;
   background-color: #0A246A;
   color: white; }
-
-/*
-
-form#search-block-form {
-    position: relative;
-    padding: $padding-l;
-    width: 100%;
-    margin: 0 0 $margin 0;
-    .form-item {
-        margin: 0;
-        padding: 0;
-    }
-    .form-actions {
-        float: none;
-        width: auto;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: $padding-l;
-        right: $padding-l;
-        #edit-submit {
-
-            margin: 0;
-            padding: $padding-m;
-            border: 0 solid;
-            @extend %btn-primary;
-        }
-    }
-    input#edit-search-block-form--2 {
-        margin: 0;
-        padding: $padding-m;
-        border: 0 solid;
-        background: $white;
-        width: 100%;
-    }
-}
-
-
-.ui-autocomplete-input {
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.ui-autocomplete-loading {
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-*/

@@ -2,9 +2,11 @@
 <!--	<?php print_r ($item); ?> -->
 
 <!--	<?= "base" . $base_path ?> -->
-  <li data-thumb="/sites/default/files/<?php print $item['#item']['filename']?>">
-    <a href="/sites/default/files/<?php print $item['#item']['filename']?>" class="colorbox">
-        <?php print render($item); ?>
+  <li data-thumb="<?php print file_create_url($item['#item']['uri'])?>">
+    <a href="<?php print file_create_url($item['#item']['uri']) ?>" class="colorbox">
+
+       <!-- blaaa <img src="/sites/default/files/<?php print file_create_url($item['#item']['uri'])?>" alt="" />	 -->
+       <?php print render($item); ?> 
     </a>
   </li>
 <?php endforeach; ?>

@@ -14,9 +14,9 @@
 .tab-pane {
     .taxonomy-term {
         width: 20%;
+        width: auto;
         margin-right: 0 !important;
         padding-right: 1em;
-        height: 12em;
         margin-bottom: 1em;
         overflow: hidden;
     }
@@ -197,60 +197,3 @@ margin: 0;
 
 /* Interaction States */
 #ui-theme-classic .ui-state-hover { font-weight: normal; border: none; background-image: none; background-color: #0A246A; color: white; }
-
-
-
-
-// search
-
-/*
-
-form#search-block-form {
-    position: relative;
-    padding: $padding-l;
-    width: 100%;
-    margin: 0 0 $margin 0;
-    .form-item {
-        margin: 0;
-        padding: 0;
-    }
-    .form-actions {
-        float: none;
-        width: auto;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: $padding-l;
-        right: $padding-l;
-        #edit-submit {
-
-            margin: 0;
-            padding: $padding-m;
-            border: 0 solid;
-            @extend %btn-primary;
-        }
-    }
-    input#edit-search-block-form--2 {
-        margin: 0;
-        padding: $padding-m;
-        border: 0 solid;
-        background: $white;
-        width: 100%;
-    }
-}
-
-
-.ui-autocomplete-input {
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.ui-autocomplete-loading {
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-*/
-
-
