@@ -506,9 +506,10 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
   position: relative; }
   .front .col-right .flower {
     position: absolute;
-    top: 10em;
+    top: 8em;
+    sbottom: 0;
     right: -3em;
-    width: 15em;
+    swidth: 25em;
     z-index: 9999; }
 .front .region-front-aside .field-name-body {
   font-size: 1em; }

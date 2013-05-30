@@ -234,9 +234,10 @@
         position: relative;
         .flower {
             position: absolute;
-            top: 10em;
+            top: 8em;
+            sbottom: 0;
             right: -3em;
-            width: 15em;
+            swidth: 25em;
             z-index: 9999; 
         }
     }
