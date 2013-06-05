@@ -407,6 +407,7 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
   smargin-left: 2em; }
   .site-nav .nav-main #main-menu {
     *zoom: 1;
+    margin-left: -0.5em;
     float: left;
     sbackground: red;
     width: 85%; }
@@ -669,6 +670,8 @@ dl dd, nav ul, nav ol, fieldset, .flexslider, .flexslider .slides, .flexslider .
     display: table; }
   .node-einrichtungsbeispiel .tab-pane:after, .page-node-11 .content .tab-pane:after {
     clear: both; }
+  .node-einrichtungsbeispiel .tab-pane figure, .page-node-11 .content .tab-pane figure {
+    float: left; }
   .node-einrichtungsbeispiel .tab-pane .taxonomy-term, .page-node-11 .content .tab-pane .taxonomy-term {
     float: left;
     margin-right: 1em; }

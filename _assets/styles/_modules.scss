@@ -91,6 +91,7 @@
         smargin-left: 2em;
         #main-menu {
             @include clearfix();
+            margin-left: -$padding-m;
             float: left;
             sbackground: red;
             width: 85%;
@@ -471,6 +472,9 @@
         float: left;
         width: 100%;
         @include clearfix();
+        figure {
+            float: left;
+        }
         .taxonomy-term {
             float: left;
             margin-right: $padding-l;

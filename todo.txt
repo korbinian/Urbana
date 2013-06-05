@@ -1,0 +1,9 @@
+-          Die Detailseiten zu den technischen Besonderheiten und den Materialien haben noch ein Schönheitspixel:
+Es werden dort maximal 3 Beispiele mit der selben technischen Besonderheit angezeigt, auch wenn viel mehr Beispiele diese Besonderheit eingetragen haben.
+Die Beispiele sollten allerdings möglichst auf Beispiele begeschränkt werden, die dem Wohnbereich entsprechen, durch welchen mal auf die Detailseite gekommen ist.
+Sehe ich mir also im Wohnbereich Wohnzimmer als technische Besonderheit „Schubladenausstattung“ an, würde ich gerne dort Bilder aus dem Wohnbereich Wohnzimmer sehen und nicht aus dem Bad.
+-          für die Produkte im Einrichtungsbeispiel soll es auch einen Bildlink geben
+-          Für die Seite Ausführung & Maße/Fronten: Die einzelnen Beispiele haben Ihre Namen verloren. Wenn Du mir exemplarisch für die Türtypen und die Füllungen jeweils einen Namen einträgst, kann ich den Rest selbst reinschreiben.
+-          Kannst Du mir bitte noch eine Taxonomie Altersgruppe einbauen mit den Werten: U20, U40. Die soll nur für angemeldete Benutzer erscheinen im Einrichtungsbeispiel.
+-          Was meinst Du zu einer erweiterten Suche, mit der man über Filter Beispiele aus bestimmten Bereichen suchen kann: Wohnbereich:Bad, Design: modern, Preisgruppe: einfach & günstig
+-          Ich bräuchte bitte für alle Taxonomien ein Alias für den Kunden. Denn für eine einfache Dateneingabe muss ich manche Begriffe so formulieren, dass Sie für den Kunden nicht schön aussehen.
